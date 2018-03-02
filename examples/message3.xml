@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<message>
+	<type>
+		<id>2</id>
+		<name>Заявка на страхование</name>
+		<number>PSK00046160</number>
+		<source>ПСК</source>
+	</type>
+    <ins_line>
+        <id>12</id>
+        <name>АВТО</name>
+    </ins_line>
+    <ins_product>
+        <id>4004</id>
+        <name>ОСАГО</name>
+    </ins_product>
+	<contact>
+        <fio>Меграбян Сарибек Гургенович</fio>
+        <phone>+79040860291</phone>
+        <fax/>
+        <email/>
+        <Contact_Id/>
+        <ip/>
+        <datetime>19.02.2018 11:40:41</datetime>
+    </contact>
+	<policy>
+        <number>ЕЕЕ 1028252282</number>
+    </policy>
+    <branch>
+        <id_state/>
+	    <name_state/>
+        <id_branch/>
+        <name_branch>Белгородский филиал</name_branch>
+        <id_dep>278</id_dep>
+        <name_dep>Белгородский филиал</name_dep>
+     </branch>
+     <extra_info>Филиал: Белгородский филиал (0)
+Город: Старый Оскол
+Контактный телефон: +79040860291
+Вопрос/причина обращения: Проверить наличия полиса 
+
+	 </extra_info>
+     <res_url/>
+</message>

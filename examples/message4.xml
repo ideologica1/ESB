@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<message>
+	<type>
+		<id>2</id>
+		<name>Заявка на страхование</name>
+		<number>PSK00046164</number>
+		<source>ПСК</source>
+	</type>
+    <ins_line>
+        <id>12</id>
+        <name>АВТО</name>
+    </ins_line>
+    <ins_product>
+        <id>4004</id>
+        <name>ОСАГО</name>
+    </ins_product>
+	<contact>
+        <fio>Ядгаров Айрат Тагирович</fio>
+        <phone>+79179079923</phone>
+        <fax/>
+        <email></email>
+        <Contact_Id/>
+        <ip/>
+        <datetime>19.02.2018 11:49:38</datetime>
+    </contact>
+	<policy>
+        <number></number>
+    </policy>
+    <branch>
+        <id_state/>
+	    <name_state/>
+        <id_branch/>
+        <name_branch>Самарский филиал</name_branch>
+        <id_dep>252</id_dep>
+        <name_dep>Самарский филиал</name_dep>
+     </branch>
+     <extra_info>Самарский филиал.Новый договор."ТРАНСНЕФТЬ - ПРИКАМЬЕ" филиал Альметьевское районное нефтепроводное управление" АО.Самара .ОСАГО.Расчет осаго.
+	 </extra_info>
+     <res_url/>
+</message>

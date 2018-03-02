@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<message>
+	<type>
+		<id>2</id>
+		<name>Заявка на страхование</name>
+		<number>PSK00046163</number>
+		<source>ПСК</source>
+	</type>
+    <ins_line>
+        <id>12</id>
+        <name>АВТО</name>
+    </ins_line>
+    <ins_product>
+        <id>4004</id>
+        <name>ОСАГО</name>
+    </ins_product>
+	<contact>
+        <fio>Истранин Дмитрий Викторович</fio>
+        <phone>+79308528999</phone>
+        <fax/>
+        <email></email>
+        <Contact_Id/>
+        <ip/>
+        <datetime>19.02.2018 11:49:33</datetime>
+    </contact>
+	<policy>
+        <number>М934ХМ 46 Истранин Дмитрий Викторович</number>
+    </policy>
+    <branch>
+        <id_state/>
+	    <name_state/>
+        <id_branch/>
+        <name_branch>Курский филиал</name_branch>
+        <id_dep>273</id_dep>
+        <name_dep>Курский филиал</name_dep>
+     </branch>
+     <extra_info>Курский филиал.Пролонгация."Газпром газораспределение Курск" филиал "Кшенский" АО.Курск.ОСАГО.Интересует пролонгация ОСАГО..
+	 </extra_info>
+     <res_url/>
+</message>

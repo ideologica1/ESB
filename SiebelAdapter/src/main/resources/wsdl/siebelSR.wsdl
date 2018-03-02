@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+             xmlns:xsdLocal1="http://www.siebel.com/xml/SGZ%20Service%20Request%20Website"
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://siebel.com/CustomUI"
+             targetNamespace="http://siebel.com/CustomUI">
+    <types>
+        <xsd:schema elementFormDefault="qualified" attributeFormDefault="unqualified"
+                    targetNamespace="http://siebel.com/CustomUI" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <xsd:import namespace="http://www.siebel.com/xml/SGZ%20Service%20Request%20Website"/>
+            <xsd:element name="ImportSR_Input">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element ref="xsdLocal1:ListOfSgzServiceRequestWebsite"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="ImportSR_Output">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="ErrorCode" type="xsd:string"/>
+                        <xsd:element name="ErrorMessage" type="xsd:string"/>
+                        <xsd:element name="NewRowId" type="xsd:string"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:schema>
+        <xsd:schema elementFormDefault="qualified" attributeFormDefault="unqualified"
+                    xmlns:xsdLocal1="http://www.siebel.com/xml/SGZ%20Service%20Request%20Website"
+                    targetNamespace="http://www.siebel.com/xml/SGZ%20Service%20Request%20Website"
+                    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <xsd:annotation>
+                <xsd:documentation>Copyright (C) 2001-2004 Siebel Systems, Inc. All rights reserved. Siebel XSD
+                    Generation
+                </xsd:documentation>
+            </xsd:annotation>
+            <xsd:element name="ListOfSgzServiceRequestWebsite" type="xsdLocal1:ListOfSgzServiceRequestWebsite"/>
+            <xsd:complexType name="ListOfSgzServiceRequestWebsiteTopElmt">
+                <xsd:sequence>
+                    <xsd:element name="ListOfSgzServiceRequestWebsite" maxOccurs="1" minOccurs="1"
+                                 type="xsdLocal1:ListOfSgzServiceRequestWebsite"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ListOfSgzServiceRequestWebsite">
+                <xsd:sequence>
+                    <xsd:element name="ServiceRequest" maxOccurs="unbounded" minOccurs="0"
+                                 type="xsdLocal1:ServiceRequest"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ServiceRequest">
+                <xsd:sequence>
+                    <xsd:element name="contract_site" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="ins_product" maxOccurs="1" minOccurs="1" type="xsd:string"/>
+                    <xsd:element name="web_request_number" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="birthdate" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="request_date" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="ins_sub-area" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="ins_area" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="email" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="ins_type" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="applicant" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="contact_phone" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="contact_fax" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="Contact_Id" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="LK_Consumer_GUID" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="LK_Id" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="ip_address" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="url_address" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="abstract" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="description" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="SGZProject" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="insurer" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="contract_policy" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="contact_number_new" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="revenue" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="source" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="SGZ_Complaint_Type" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="SGZ_Sub_Complaint_Type" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="SGZ_Agreement_DRP_Flag" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="sub_office" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="contact_guid" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="ins_sub_type" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="complaint_type2" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="customer_status" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="payment_site" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="ListOfSgzEmcDocs" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfSgzEmcDocs"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ListOfSgzEmcDocs">
+                <xsd:sequence>
+                    <xsd:element name="SgzEmcDocs" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:SgzEmcDocs"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="SgzEmcDocs">
+                <xsd:sequence>
+                    <xsd:element name="Comment" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="DocType" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="DocFileDate" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="DocFileExt" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="DocFileName" maxOccurs="1" minOccurs="1" type="xsd:string"/>
+                    <xsd:element name="DocFileSize" maxOccurs="1" minOccurs="0" type="xsd:string"/>
+                    <xsd:element name="DocumentumId" maxOccurs="1" minOccurs="1" type="xsd:string"/>
+                </xsd:sequence>
+            </xsd:complexType>
+        </xsd:schema>
+    </types>
+    <message name="ImportSR_Input">
+        <part name="ImportSR_Input" element="tns:ImportSR_Input"/>
+    </message>
+    <message name="ImportSR_Output">
+        <part name="ImportSR_Output" element="tns:ImportSR_Output"/>
+    </message>
+    <portType name="SGZ_spcService_spcRequest_spcImport_spcFrom_spcWebsite">
+        <operation name="ImportSR">
+            <input message="tns:ImportSR_Input"/>
+            <output message="tns:ImportSR_Output"/>
+        </operation>
+    </portType>
+    <binding name="SGZ_spcService_spcRequest_spcImport_spcFrom_spcWebsite"
+             type="tns:SGZ_spcService_spcRequest_spcImport_spcFrom_spcWebsite">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="ImportSR">
+            <soap:operation soapAction="document/http://siebel.com/CustomUI:ImportSR"/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+    </binding>
+    <service name="SGZ_spcService_spcRequest_spcImport_spcFrom_spcWebsite">
+        <port name="SGZ_spcService_spcRequest_spcImport_spcFrom_spcWebsite"
+              binding="tns:SGZ_spcService_spcRequest_spcImport_spcFrom_spcWebsite">
+            <soap:address location="http://s00-0000- sb22.sogaz.ru/eai_rus/start.swe?SWEExtSource=WebService&amp;SWEExtCmd=Execute&amp;WSSOAP=1"/>
+        </port>
+    </service>
+</definitions>

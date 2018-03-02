@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Configures the Camel Context-->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:camel="http://camel.apache.org/schema/spring"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
+
+  <camel:camelContext id="SiebelAdapter" trace="true">
+    <camel:packageScan>
+      <camel:package>ru.sogaz.esb.proxy.siebel.routes</camel:package>
+    </camel:packageScan>
+  </camel:camelContext>
+
+  <bean id="config" class="ru.sogaz.esb.configurations.Config" factory-method="getEsbConfiguration"/>
+
+  <bean id="jaxWsProxyFactoryBean" class="org.apache.cxf.jaxws.JaxWsProxyFactoryBean">
+    <property name="serviceClass" value="com.siebel.customui.SGZSpcServiceSpcRequestSpcImportSpcFromSpcWebsite"/>
+    <property name="address" value="#{config.siebelEndpoint.endpoint}"/>
+  </bean>
+
+  <bean id="siebelEndpoint" factory-bean="jaxWsProxyFactoryBean" factory-method="create"/>
+
+</beans>
