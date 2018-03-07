@@ -87,4 +87,17 @@ public class Contact {
     public void setDateTime(String dateTime) {
         this.dateTime = dateTime;
     }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "fio='" + fio + '\'' +
+                ", phone='" + phone + '\'' +
+                ", fax='" + fax + '\'' +
+                ", email='" + email + '\'' +
+                ", contactId=" + contactId +
+                ", ip='" + ip + '\'' +
+                ", dateTime='" + dateTime + '\'' +
+                '}';
+    }
 }

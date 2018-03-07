@@ -7,9 +7,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
        http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
 
-  <camel:camelContext id="SiebelAdapter" trace="true">
+  <camel:camelContext id="SiebelAdapter">
     <camel:packageScan>
-      <camel:package>ru.sogaz.esb.proxy.siebel.routes</camel:package>
+      <camel:package>ru.sogaz.esb.adapter.siebel.routes</camel:package>
     </camel:packageScan>
   </camel:camelContext>
 

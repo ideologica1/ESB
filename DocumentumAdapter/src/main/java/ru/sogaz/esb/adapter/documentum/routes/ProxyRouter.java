@@ -1,6 +1,7 @@
 package ru.sogaz.esb.adapter.documentum.routes;
 
 import org.apache.camel.Exchange;
+import org.apache.camel.LoggingLevel;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.model.dataformat.JsonLibrary;
 import ru.sogaz.esb.adapter.documentum.aggregation.LinkAggregationStrategy;
@@ -17,23 +18,33 @@ import ru.sogaz.esb.configurations.type.ConfigEndpointType;
  */
 public class ProxyRouter extends RouteBuilder {
 
-    private static ConfigEndpointType DOCUMENTUM_ENDPOINT = Config.getEsbConfiguration().getDocumentumEndpoint();
+    private static final ConfigEndpointType DOCUMENTUM_ENDPOINT = Config.getEsbConfiguration().getDocumentumEndpoint();
 
     /*http://s00-0000-dm13:7001/dctm-rest72/repositories/orclord/folders/0c000001816ffaba/documents*/
-    private static String DOCUMENTUM_CREATE_PATH = "http://" + DOCUMENTUM_ENDPOINT.getHost() +
-            ":" + DOCUMENTUM_ENDPOINT.getPort() + "/repositories/orclord/documents/0900000189ae216e";
+    private static final String DOCUMENTUM_CREATE_PATH = "http://" + DOCUMENTUM_ENDPOINT.getHost() +
+            ":" + DOCUMENTUM_ENDPOINT.getPort() + "/dctm-rest72/repositories/orclord/folders/0c000001816ffaba/documents";
 
     @Override
     public void configure() throws Exception {
-        from("direct-vm:documentumAdapter:create")
-                .split(header("attachments")).parallelProcessing()
+
+        onException(Exception.class)
+                .handled(true)
+                .log(LoggingLevel.ERROR, "${exception.stack}")
+                .maximumRedeliveries(2)
+                .redeliveryDelay(15000)
+                .to("direct-vm:emailAdapter:send");
+
+        from("direct-vm:documentumAdapter:create").routeId("DocumentumProxyRoute")
+                .split(header("attachments"))
                 .aggregationStrategy(new LinkAggregationStrategy())
+                    .removeHeaders("*", "uuid")
                     .process(new NewDocumentProcessor())
                     .marshal().json(JsonLibrary.Jackson)
 
-                    .setHeader(Exchange.CONTENT_TYPE, simple("application/vnd.emc.documentum+json;charset=UTF-8"))
-                    .setHeader(Exchange.HTTP_METHOD, simple("POST"))
+                    .setHeader(Exchange.CONTENT_TYPE, constant("application/vnd.emc.documentum+json;charset=UTF-8"))
+                    .setHeader(Exchange.HTTP_METHOD, constant("POST"))
                     .setHeader("Authorization").simple("Basic " + DOCUMENTUM_ENDPOINT.getCredential().getBase64String())
+                    .log(LoggingLevel.INFO, "Try call documentum to create document: uuid - ${header[uuid]}; request - ${body}")
                     .to(DOCUMENTUM_CREATE_PATH)
 
                     .unmarshal().json(JsonLibrary.Jackson, Document.class)
@@ -46,10 +57,13 @@ public class ProxyRouter extends RouteBuilder {
                         }
                     })
 
-                    .setHeader(Exchange.CONTENT_TYPE, simple("application/octet-stream"))
-                    .setHeader(Exchange.HTTP_METHOD, simple("POST"))
+                    .setHeader(Exchange.CONTENT_TYPE, constant("application/octet-stream"))
+                    .setHeader(Exchange.HTTP_METHOD, constant("POST"))
+
+                    .log(LoggingLevel.INFO, "Try call documentum to send document: uuid - ${header[uuid]}; document - ${body}")
                     .process(new FileToInputStreamProcessor())
-                    .to(header("Location").toString() + "/contents?overwrite=true&format=" + header("fileFormat").toString())
+                    .recipientList(simple("${header[Location]}/contents?overwrite=true&format=${header[fileFormat]}"))
+
                     .transform(header("link"))
                 .end();
     }

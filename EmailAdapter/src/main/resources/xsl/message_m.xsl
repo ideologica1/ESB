@@ -1,7 +1,7 @@
 ﻿<?xml version='1.0'?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:template match="/">
-        <message>
+        <email_message>
             <xsl:choose>
                 <!-- Уведомление о страховом случае -->
                 <xsl:when test="message/type/id='1'">
@@ -16,11 +16,11 @@
                             <to>Sherban.Svetlana@sogaz.ru</to>
                         </xsl:when>
                         <xsl:otherwise>
-                            <to>davetikov@siblion.ru</to>
+                            <to>TryakinAA@sogaz.ru</to>
                         </xsl:otherwise>
                     </xsl:choose>
                     <!--<cc></cc>-->
-                    <bcc>davetikov@siblion.ru</bcc>
+                    <bcc>TryakinAA@sogaz.ru</bcc>
                     <subject>Уведомление о страховом случае с сайта СОГАЗ-КОМПЛЕКС</subject>
                     <!-- Шаблон {Message_Text} заменяется на содержимое сообщения -->
                     <message_body>{Message_Text}</message_body>
@@ -98,7 +98,7 @@
                     <message_body>{Message_Text}</message_body>
                 </xsl:otherwise>
             </xsl:choose>
-        </message>
+        </email_message>
     </xsl:template>
 </xsl:stylesheet>
 

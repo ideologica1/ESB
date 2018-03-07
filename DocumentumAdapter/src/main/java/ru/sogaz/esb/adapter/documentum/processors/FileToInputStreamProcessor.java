@@ -14,7 +14,7 @@ public class FileToInputStreamProcessor implements Processor {
 
     @Override
     public void process(Exchange exchange) throws Exception {
-        File file = exchange.getIn().getHeader("file", File.class);
+        File file = exchange.getProperty("file", File.class);
         exchange.getIn().setBody(new FileInputStream(file));
     }
 }

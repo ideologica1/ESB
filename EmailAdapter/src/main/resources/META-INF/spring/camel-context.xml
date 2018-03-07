@@ -11,4 +11,6 @@
     </camel:packageScan>
   </camel:camelContext>
 
+  <bean id="uuidGenerator" class="ru.sogaz.esb.adapter.email.generators.UUIDGenerator"/>
+
 </beans>

@@ -33,4 +33,13 @@ public class EsbConfiguration extends AbstractConfiguration {
     public ConfigEndpointType getDocumentumEndpoint() {
         return getURL("ESB.Documentum.URL");
     }
+
+    public String getAdminEmail() {
+        return getString("ESB.Email.AdminEmail", "admin@sogaz.ru");
+    }
+
+    public String getFromEmail() {
+        return getString("ESB.Email.FromEmail", "davetikov@siblion.ru");
+    }
+
 }

@@ -43,10 +43,12 @@ public class EsbToSiebel {
         ListOfSgzEmcDocs listOfSgzEmcDocs = new ListOfSgzEmcDocs();
         List<SgzEmcDocs> sgzEmcDocs = listOfSgzEmcDocs.getSgzEmcDocs();
         for (String link : message.getLinks()) {
-            SgzEmcDocs sgzEmcDoc = new SgzEmcDocs();
-            String[] linkParts = link.split("[/]");
-            sgzEmcDoc.setDocumentumId(linkParts[linkParts.length-1]);
-            sgzEmcDocs.add(sgzEmcDoc);
+            if (null != link) {
+                SgzEmcDocs sgzEmcDoc = new SgzEmcDocs();
+                String[] linkParts = link.split("[/]");
+                sgzEmcDoc.setDocumentumId(linkParts[linkParts.length - 1]);
+                sgzEmcDocs.add(sgzEmcDoc);
+            }
         }
         sr.setListOfSgzEmcDocs(listOfSgzEmcDocs);
         serviceRequestList.add(sr);

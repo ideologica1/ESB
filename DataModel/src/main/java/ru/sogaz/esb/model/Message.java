@@ -2,6 +2,7 @@ package ru.sogaz.esb.model;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -103,10 +104,24 @@ public class Message {
     }
 
     public List<String> getLinks() {
+        if (null == links) {
+            links = new ArrayList<>();
+        }
         return links;
     }
 
-    public void setLinks(List<String> links) {
-        this.links = links;
+    @Override
+    public String toString() {
+        return "{" +
+                "type=" + type +
+                ", insLine=" + insLine +
+                ", insProduct=" + insProduct +
+                ", contact=" + contact +
+                ", policy=" + policy +
+                ", branch=" + branch +
+                ", extraInfo='" + extraInfo + '\'' +
+                ", resUrl='" + resUrl + '\'' +
+                ", links=" + links +
+                '}';
     }
 }

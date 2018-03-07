@@ -76,4 +76,16 @@ public class Branch {
     public void setNameDep(String nameDep) {
         this.nameDep = nameDep;
     }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "idState=" + idState +
+                ", nameState='" + nameState + '\'' +
+                ", idBranch=" + idBranch +
+                ", nameBranch='" + nameBranch + '\'' +
+                ", idDep=" + idDep +
+                ", nameDep='" + nameDep + '\'' +
+                '}';
+    }
 }

@@ -5,12 +5,14 @@
             <URL host="mail.siblion.ru" login="davetikov" password="Zarbazan3005" timeout="60000"/>
             <ImapPort>143</ImapPort>
             <SmptPort>25</SmptPort>
+            <AdminEmail>davetikov@siblion.ru</AdminEmail>
+            <FromEmail>davetikov@siblion.ru</FromEmail>
         </Email>
         <Siebel>
-            <URL endpoint="http://s00-0000- sb22.sogaz.ru/eai_rus/start.swe?SWEExtSource=WebService&amp;SWEExtCmd=Execute&amp;WSSOAP=1"/>
+            <URL endpoint="http://localhost:8082/eai_rus/start.swe?SWEExtSource=WebService&amp;SWEExtCmd=Execute&amp;WSSOAP=1"/>
         </Siebel>
         <Documentum>
-            <URL host="s00-0000-dm13" port="7001" login="CRMCollaboration" password="DocumentumCRM"/>
+            <URL host="localhost" port="8081" login="CRMCollaboration" password="DocumentumCRM"/>
         </Documentum>
     </ESB>
 </Configuration>

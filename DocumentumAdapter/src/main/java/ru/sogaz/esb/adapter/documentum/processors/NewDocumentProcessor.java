@@ -17,7 +17,7 @@ public class NewDocumentProcessor implements Processor {
     @Override
     public void process(Exchange exchange) throws Exception {
         File file = exchange.getIn().getBody(File.class);
-        exchange.getIn().setHeader("file", file);
+        exchange.setProperty("file", file);
 
         String[] fileParts = file.getName().split("[.]");
         exchange.getIn().setHeader("fileFormat", fileParts[fileParts.length-1]);

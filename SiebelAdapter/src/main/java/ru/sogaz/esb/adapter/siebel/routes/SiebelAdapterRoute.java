@@ -1,5 +1,6 @@
 package ru.sogaz.esb.adapter.siebel.routes;
 
+import org.apache.camel.LoggingLevel;
 import org.apache.camel.builder.RouteBuilder;
 import ru.sogaz.esb.adapter.siebel.mapping.EsbToSiebel;
 
@@ -10,8 +11,24 @@ import ru.sogaz.esb.adapter.siebel.mapping.EsbToSiebel;
 public class SiebelAdapterRoute extends RouteBuilder {
 
     public void configure() throws Exception {
+
+        onException(Exception.class)
+                .handled(true)
+                .log(LoggingLevel.ERROR, "${exception.stacktrace}")
+                .maximumRedeliveries(2)
+                .redeliveryDelay(15000)
+                .to("direct-vm:emailAdapter:send");
+
         from("direct-vm:siebelAdapter:sendSR")
                 .bean(new EsbToSiebel(), "mapping")
-                .to("bean:siebelEndpoint");
+                .log(LoggingLevel.INFO, "Try call Siebel to send SR: uuid - ${header[uuid]}; SR - ${body}")
+                .to("bean:siebelEndpoint")
+                .log(LoggingLevel.INFO, "Successful call Siebel to send SR: uuid - ${header[uuid]}; SR - ${body}")
+                .choice()
+                    .when(simple("${body.errorCode} != 'OK'"))
+                        .throwException(new RuntimeException("Unsuccessful call siebel"))
+                    .otherwise()
+                .endChoice()
+        ;
     }
 }
