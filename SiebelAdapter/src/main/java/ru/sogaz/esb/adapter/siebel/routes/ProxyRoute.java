@@ -8,7 +8,7 @@ import ru.sogaz.esb.adapter.siebel.mapping.EsbToSiebel;
  * @author DNAvetik
  * 28.02.2018.
  */
-public class SiebelAdapterRoute extends RouteBuilder {
+public class ProxyRoute extends RouteBuilder {
 
     public void configure() throws Exception {
 
