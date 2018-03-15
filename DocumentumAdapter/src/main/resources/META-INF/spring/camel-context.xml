@@ -7,7 +7,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
        http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
 
-    <camel:camelContext id="DocumentumAdapter" trace="true">
+    <camel:camelContext id="DocumentumAdapter">
         <camel:packageScan>
             <camel:package>ru.sogaz.esb.adapter.documentum.routes</camel:package>
         </camel:packageScan>
