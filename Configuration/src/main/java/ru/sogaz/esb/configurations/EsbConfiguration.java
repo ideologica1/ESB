@@ -14,16 +14,20 @@ public class EsbConfiguration extends AbstractConfiguration {
     }
 
     //------------------------------------------------E-MAIL------------------------------------------------//
-    public ConfigEndpointType getEmailEndpoint() {
-        return getURL("ESB.Email.URL");
+    public ConfigEndpointType getEmailSmtpEndpoint() {
+        return getURL("ESB.Email.Smtp-URL");
+    }
+
+    public ConfigEndpointType getEmailImapEndpoint() {
+        return getURL("ESB.Email.Imap-URL");
     }
 
     public int getEmailImapPort() {
-        return getInt("ESB.Email.ImapPort", 143);
+        return getInt("ESB.Email.ImapPort", 993);
     }
 
     public int getEmailSmtpPort() {
-        return getInt("ESB.Email.SmtpPort", 25);
+        return getInt("ESB.Email.SmtpPort", 465);
     }
 
     public ConfigEndpointType getSiebelEndpoint() {

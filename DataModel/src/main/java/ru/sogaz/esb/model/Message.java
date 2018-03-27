@@ -1,5 +1,7 @@
 package ru.sogaz.esb.model;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;
@@ -10,6 +12,7 @@ import java.util.List;
  * 01.03.2018.
  */
 @XmlRootElement(name = "message")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Message {
 
     @XmlElement(name = "type")

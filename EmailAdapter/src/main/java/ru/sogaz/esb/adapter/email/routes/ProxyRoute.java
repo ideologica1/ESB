@@ -16,11 +16,11 @@ public class ProxyRoute extends RouteBuilder {
     private static final EsbConfiguration config = Config.getEsbConfiguration();
 
     // smtp://login@host:port?password=password
-    private static final String smtpEndpoint = String.format("smtp://%s@%s:%d?password=%s",
-            config.getEmailEndpoint().getCredential().getLogin(),
-            config.getEmailEndpoint().getHost(),
+    private static final String smtpEndpoint = String.format("smtps://%s:%d?username=%s&password=%s",
+            config.getEmailSmtpEndpoint().getHost(),
             config.getEmailSmtpPort(),
-            config.getEmailEndpoint().getCredential().getPassword()
+            config.getEmailSmtpEndpoint().getCredential().getLogin(),
+            config.getEmailSmtpEndpoint().getCredential().getPassword()
     );
 
     public void configure() throws Exception {
@@ -33,7 +33,7 @@ public class ProxyRoute extends RouteBuilder {
 
         from("direct-vm:emailAdapter:send").routeId("EmailAdapterProxyRoute")
                 .choice()
-                    .when(simple("header[CamelExceptionCaught] is null"))
+                    .when(header("CamelExceptionCaught").isNull())
                         .transform(header("xmlBody"))
                         .to("xslt:classpath:/xsl/message_m.xsl")
                         .unmarshal().jacksonxml(EmailMessage.class)
@@ -44,7 +44,8 @@ public class ProxyRoute extends RouteBuilder {
                         .log(LoggingLevel.INFO, "Successful transform xml to EmailMessage: uuid - ${header[uuid]}; EmailMessage - ${body}")
                         .removeHeaders("*", "uuid")
 
-                        .setHeader("to", simple("${body.to}"))
+                        /*.setHeader("to", simple("${body.to}"))*/
+                        .setHeader("to", simple("ideyniy@mail.ru"))
                         .setHeader("cc", simple("${body.cc}"))
                         .setHeader("bcc", simple("${body.bcc}"))
                         .setHeader("subject", simple("${body.subject}"))

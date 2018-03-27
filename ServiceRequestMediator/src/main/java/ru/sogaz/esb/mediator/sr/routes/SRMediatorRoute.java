@@ -17,10 +17,10 @@ public class SRMediatorRoute extends RouteBuilder {
                     oldExchange.getIn().setBody(newExchange.getIn().getBody());
                     return oldExchange;
                 })
-                .log("body - ${body}")
+                .log("this is exactly that point where nullpointer occurs - ${body}")
                 .process(exchange -> {
-                    Message message = exchange.getIn().getHeader("objectBody", Message.class);
-                    message.getLinks().addAll(exchange.getIn().getBody(List.class));
+                    Message message = exchange.getIn().getHeader("objectBody", Message.class);/*
+                    message.getLinks().addAll(exchange.getIn().getBody(List.class));*/
                     exchange.getIn().setBody(message);
                 })
 

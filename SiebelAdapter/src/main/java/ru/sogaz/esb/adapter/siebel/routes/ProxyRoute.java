@@ -19,7 +19,8 @@ public class ProxyRoute extends RouteBuilder {
                 .redeliveryDelay(15000)
                 .to("direct-vm:emailAdapter:send");
 
-        from("direct-vm:siebelAdapter:sendSR")
+        from("direct-vm:siebelAdapter:sendSR").routeId("SiebelRoute")
+                .log(LoggingLevel.INFO, "Try execute mapping ESB to Siebel: uuid - ${header[uuid]}; SR - ${body}")
                 .bean(new EsbToSiebel(), "mapping")
                 .log(LoggingLevel.INFO, "Try call Siebel to send SR: uuid - ${header[uuid]}; SR - ${body}")
                 .to("bean:siebelEndpoint")

@@ -8,7 +8,7 @@
       <configuration manifestGenerationMode="OsmorcControlled" manifestLocation="" jarfileLocation="EmailAdapter-1.0.0.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="ru.sogaz.esb.EmailAdapter" bundleVersion="1.0.0" ignoreFilePattern="" useProjectDefaultManifestFileLocation="true" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
         <additionalProperties>
           <property key="Bundle-Name" value="SOGAZ :: ESB :: EmailAdapter" />
-          <property key="Include-Resource" value="META-INF/spring/camel-context.xml=$MODULE_DIR$/src/main/resources/META-INF/spring/camel-context.xml,xsl/message_m.xsl=$MODULE_DIR$/src/main/resources/xsl/message_m.xsl,xsl/message_h.xsl=$MODULE_DIR$/src/main/resources/xsl/message_h.xsl" />
+          <property key="Include-Resource" value="META-INF/spring/camel-context.xml=$MODULE_DIR$/src/main/resources/META-INF/spring/camel-context.xml,xsl/message_h.xsl=$MODULE_DIR$/src/main/resources/xsl/message_h.xsl,xsl/message_m.xsl=$MODULE_DIR$/src/main/resources/xsl/message_m.xsl" />
         </additionalProperties>
         <additionalJARContents />
       </configuration>
