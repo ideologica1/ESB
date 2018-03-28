@@ -1,5 +1,9 @@
 package ru.sogaz.esb.adapter.documentum.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;
@@ -9,22 +13,25 @@ import java.util.List;
  * @author DNAvetik
  * 02.03.2018.
  */
-@XmlRootElement(name = "document")
+
+@JsonIgnoreProperties(ignoreUnknown=true)
 public class Document {
 
-    @XmlElement(name = "name")
+
     private String name;
 
-    @XmlElement(name = "type")
+
     private String type;
 
-    @XmlElement(name = "definition")
+    public Document() {
+    }
+
     private String definition;
 
-    @XmlElement(name = "properties")
+
     private List<Property> properties;
 
-    @XmlElement(name = "links")
+
     private List<Link> links;
 
     public String getName() {
@@ -63,5 +70,13 @@ public class Document {
             links = new ArrayList<>();
         }
         return links;
+    }
+
+    public void setProperties(List<Property> properties) {
+        this.properties = properties;
+    }
+
+    public void setLinks(List<Link> links) {
+        this.links = links;
     }
 }

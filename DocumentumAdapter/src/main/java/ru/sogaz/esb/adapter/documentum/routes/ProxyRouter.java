@@ -29,25 +29,28 @@ public class ProxyRouter extends RouteBuilder {
 
         onException(Exception.class)
                 .handled(true)
-                .log(LoggingLevel.ERROR, "${exception.stack}")
+                .log(LoggingLevel.ERROR, "${exception.stacktrace}")
                 .maximumRedeliveries(2)
                 .redeliveryDelay(15000)
                 .to("direct-vm:emailAdapter:send");
 
         from("direct-vm:documentumAdapter:create").routeId("DocumentumProxyRoute")
-                .split(header("attachments"))
+                .streamCaching()
+                .split(header("attachments")).parallelProcessing()
                 .aggregationStrategy(new LinkAggregationStrategy())
                     .removeHeaders("*", "uuid")
                     .process(new NewDocumentProcessor())
+                .log(LoggingLevel.DEBUG, "Trying to marshal Document.class to JSON request; request - ${body}")
                     .marshal().json(JsonLibrary.Jackson)
-
+                .log(LoggingLevel.DEBUG, "Successful marshaling Document.class to JSON request; request - ${body}")
                     .setHeader(Exchange.CONTENT_TYPE, constant("application/vnd.emc.documentum+json;charset=UTF-8"))
                     .setHeader(Exchange.HTTP_METHOD, constant("POST"))
                     .setHeader("Authorization").simple("Basic " + DOCUMENTUM_ENDPOINT.getCredential().getBase64String())
                     .log(LoggingLevel.INFO, "Try call documentum to create document: uuid - ${header[uuid]}; request - ${body}")
                     .to(DOCUMENTUM_CREATE_PATH)
-
+                .log(LoggingLevel.DEBUG, "Trying to unmarshall JSON response")
                     .unmarshal().json(JsonLibrary.Jackson, Document.class)
+                .log(LoggingLevel.DEBUG, "Successfully unmarshaled JSON response")
                     .process(exchange -> {
                         Document document = exchange.getIn().getBody(Document.class);
                         for (Link link : document.getLinks()) {

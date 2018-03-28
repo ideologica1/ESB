@@ -40,6 +40,7 @@ public class ProxyRoute extends RouteBuilder {
                         .process(exchange -> {
                             EmailMessage em = exchange.getIn().getBody(EmailMessage.class);
                             em.setText(exchange.getIn().getHeader("emailMessageText", String.class));
+                            exchange.getIn().setBody(em);
                         })
                         .log(LoggingLevel.INFO, "Successful transform xml to EmailMessage: uuid - ${header[uuid]}; EmailMessage - ${body}")
                         .removeHeaders("*", "uuid")

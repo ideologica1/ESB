@@ -5,15 +5,23 @@ package ru.sogaz.esb.adapter.documentum.model;
  * 02.03.2018.
  */
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 
+@JsonIgnoreProperties
 public class Link {
 
-    @XmlElement(name = "rel")
+
     private String rel;
 
-    @XmlElement(name = "href")
+
     private String href;
+
+    public Link() {
+    }
 
     public String getRel() {
         return rel;

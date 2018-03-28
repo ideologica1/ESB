@@ -1,17 +1,25 @@
 package ru.sogaz.esb.adapter.documentum.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 
 /**
  * @author DNAvetik
  * 02.03.2018.
  */
+
+@JsonIgnoreProperties
 public class Property {
 
-    @XmlElement(name = "r_object_type", defaultValue = "dm_document")
+
+    @JsonProperty("r_object_type")
     private String objectType;
 
-    @XmlElement(name = "object_name")
+    @JsonProperty("object_name")
     private String objectName;
 
     private String title;
@@ -110,5 +118,73 @@ public class Property {
 
     public Boolean getA_link_resolved() {
         return a_link_resolved;
+    }
+
+    public Property() {
+    }
+
+    public void setTitle(String title) {
+
+        this.title = title;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+
+    public void setAuthors(String authors) {
+        this.authors = authors;
+    }
+
+    public void setKeywords(String keywords) {
+        this.keywords = keywords;
+    }
+
+    public void setA_application_type(String a_application_type) {
+        this.a_application_type = a_application_type;
+    }
+
+    public void setA_status(String a_status) {
+        this.a_status = a_status;
+    }
+
+    public void setR_creation_date(String r_creation_date) {
+        this.r_creation_date = r_creation_date;
+    }
+
+    public void setR_modify_date(String r_modify_date) {
+        this.r_modify_date = r_modify_date;
+    }
+
+    public void setR_modifier(String r_modifier) {
+        this.r_modifier = r_modifier;
+    }
+
+    public void setR_access_date(String r_access_date) {
+        this.r_access_date = r_access_date;
+    }
+
+    public void setA_is_hidden(Boolean a_is_hidden) {
+        this.a_is_hidden = a_is_hidden;
+    }
+
+    public void setI_is_deleted(Boolean i_is_deleted) {
+        this.i_is_deleted = i_is_deleted;
+    }
+
+    public void setA_retention_date(String a_retention_date) {
+        this.a_retention_date = a_retention_date;
+    }
+
+    public void setA_archive(Boolean a_archive) {
+        this.a_archive = a_archive;
+    }
+
+    public void setA_compound_architecture(String a_compound_architecture) {
+        this.a_compound_architecture = a_compound_architecture;
+    }
+
+    public void setA_link_resolved(Boolean a_link_resolved) {
+        this.a_link_resolved = a_link_resolved;
     }
 }
