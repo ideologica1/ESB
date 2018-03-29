@@ -9,6 +9,8 @@ import org.apache.camel.Exchange;
 import org.apache.camel.Expression;
 import ru.sogaz.esb.model.Message;
 
+import java.io.UnsupportedEncodingException;
+import java.nio.charset.Charset;
 import java.util.List;
 
 /**
@@ -16,6 +18,7 @@ import java.util.List;
  * 01.03.2018.
  */
 public class EsbToSiebel {
+    private final static String MESSAGE = "В случае страхового события по ВПМЖ параметры полиса см. на закладке ВЛОЖЕНИЯ (файл message_h.htm).";
 
     public static ImportSRInput mapping(Message message) {
         ImportSRInput result = new ImportSRInput();
@@ -34,7 +37,11 @@ public class EsbToSiebel {
         sr.setUrlAddress(message.getResUrl());
         sr.setWebRequestNumber(message.getType().getNumber());
         sr.setRequestDate(message.getContact().getDateTime());
-        sr.setAbstract("В случае страхового события по ВПМЖ параметры полиса см. на закладке ВЛОЖЕНИЯ (файл message_h.htm).");
+        try {
+            sr.setAbstract(new String(MESSAGE.getBytes(Charset.forName("UTF-8")), "UTF-8"));
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
         sr.setDescription(message.getExtraInfo());
         sr.setSource(message.getType().getSource());
         sr.setContractSite(message.getBranch().getNameBranch());

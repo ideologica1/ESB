@@ -13,6 +13,8 @@
     </camel:packageScan>
   </camel:camelContext>
 
+
+
   <bean id="config" class="ru.sogaz.esb.configurations.Config" factory-method="getEsbConfiguration"/>
 
   <bean id="jaxWsProxyFactoryBean" class="org.apache.cxf.jaxws.JaxWsProxyFactoryBean">

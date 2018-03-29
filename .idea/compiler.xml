@@ -17,13 +17,13 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Configuration" target="1.8" />
-      <module name="DataModel" target="1.8" />
-      <module name="DocumentumAdapter" target="1.8" />
-      <module name="EmailAdapter" target="1.8" />
+      <module name="Configuration" target="1.5" />
+      <module name="DataModel" target="1.5" />
+      <module name="DocumentumAdapter" target="1.5" />
+      <module name="EmailAdapter" target="1.5" />
       <module name="EmailFacade" target="1.5" />
       <module name="ESB" target="1.5" />
-      <module name="ServiceRequestMediator" target="1.8" />
+      <module name="ServiceRequestMediator" target="1.5" />
       <module name="SFTPProxy" target="1.8" />
       <module name="SiebelAdapter" target="1.8" />
       <module name="SiebelProxy" target="1.8" />

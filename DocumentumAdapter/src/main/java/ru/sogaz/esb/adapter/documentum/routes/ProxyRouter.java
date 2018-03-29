@@ -3,6 +3,7 @@ package ru.sogaz.esb.adapter.documentum.routes;
 import org.apache.camel.Exchange;
 import org.apache.camel.LoggingLevel;
 import org.apache.camel.builder.RouteBuilder;
+import org.apache.camel.model.dataformat.JaxbDataFormat;
 import org.apache.camel.model.dataformat.JsonLibrary;
 import ru.sogaz.esb.adapter.documentum.aggregation.LinkAggregationStrategy;
 import ru.sogaz.esb.adapter.documentum.model.Document;
@@ -26,6 +27,8 @@ public class ProxyRouter extends RouteBuilder {
 
     @Override
     public void configure() throws Exception {
+
+
 
         onException(Exception.class)
                 .handled(true)

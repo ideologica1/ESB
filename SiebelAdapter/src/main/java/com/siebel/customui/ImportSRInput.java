@@ -6,6 +6,8 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.siebel.xml.sgz_20service_20request_20website.ListOfSgzServiceRequestWebsite;
 
 
@@ -33,6 +35,7 @@ import com.siebel.xml.sgz_20service_20request_20website.ListOfSgzServiceRequestW
     "listOfSgzServiceRequestWebsite"
 })
 @XmlRootElement(name = "ImportSR_Input")
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class ImportSRInput {
 
     @XmlElement(name = "ListOfSgzServiceRequestWebsite", namespace = "http://www.siebel.com/xml/SGZ%20Service%20Request%20Website", required = true)

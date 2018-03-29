@@ -6,6 +6,7 @@ import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.model.dataformat.JsonLibrary;
 import org.apache.camel.processor.aggregate.AggregationStrategy;
+import ru.sogaz.esb.adapter.email.NoMessageXmlException;
 import ru.sogaz.esb.adapter.email.processors.AttachmentProcessor;
 import ru.sogaz.esb.adapter.email.processors.MessageProcessor;
 import ru.sogaz.esb.configurations.Config;
@@ -28,7 +29,15 @@ public class FacadeRoute extends RouteBuilder {
             config.getEmailImapEndpoint().getCredential().getPassword()
     );
 
+
+
     public void configure() throws Exception {
+
+        onException(NoMessageXmlException.class)
+                .handled(false)
+                .log(LoggingLevel.ERROR, "E-mail message doesn't contain message.xml file or format is unsatisfied: ${exception.stacktrace}")
+                .to("direct-vm:emailAdapter:send");
+
         from(imapEndpoint).
         routeId("EmailAdapterFacadeRoute")
                 .log(LoggingLevel.INFO, "Retrieving e-mail from the inbox folder")

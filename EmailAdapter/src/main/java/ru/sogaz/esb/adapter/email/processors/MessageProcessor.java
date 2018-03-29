@@ -20,12 +20,15 @@ public class MessageProcessor implements Processor {
     public void process(Exchange exchange) throws Exception {
 
         Map<String, DataHandler> attachments = exchange.getIn().getAttachments();
+        boolean isMessageCorrect = false;
         for (String key : attachments.keySet()) {
             if (MimeUtility.decodeText(key).equalsIgnoreCase("message.xml")) {
                 InputStreamReader br = new InputStreamReader((BASE64DecoderStream) attachments.get(key).getContent());
                 exchange.getIn().setBody(IOUtils.toString(br));
+                isMessageCorrect = true;
             }
         }
+        if (!isMessageCorrect)
         throw new NoMessageXmlException("message.xml file wrong or absent");
     }
 }

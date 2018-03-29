@@ -12,7 +12,7 @@
       <configuration manifestGenerationMode="OsmorcControlled" manifestLocation="" jarfileLocation="SiebelAdapter-1.0.0.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="ru.sogaz.esb.SiebelAdapter" bundleVersion="1.0.0" ignoreFilePattern="" useProjectDefaultManifestFileLocation="true" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
         <additionalProperties>
           <property key="Bundle-Name" value="SOGAZ :: ESB :: SiebelAdapter" />
-          <property key="Include-Resource" value="META-INF/spring/camel-context.xml=$MODULE_DIR$/src/main/resources/META-INF/spring/camel-context.xml,wsdl/siebelSR.wsdl=$MODULE_DIR$/src/main/resources/wsdl/siebelSR.wsdl" />
+          <property key="Include-Resource" value="META-INF/spring/camel-context.xml=$MODULE_DIR$/src/main/resources/META-INF/spring/camel-context.xml,wsdl/siebelSR.wsdl=$MODULE_DIR$/src/main/resources/wsdl/siebelSR.wsdl,xsl/departments.xsl=$MODULE_DIR$/src/main/resources/xsl/departments.xsl,xsl/message_s.xsl=$MODULE_DIR$/src/main/resources/xsl/message_s.xsl" />
         </additionalProperties>
         <additionalJARContents />
       </configuration>
@@ -36,10 +36,18 @@
     <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.6" level="project" />
     <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.2" level="project" />
     <orderEntry type="module" module-name="DataModel" />
-    <orderEntry type="library" name="Maven: org.apache.camel:camel-core:2.16.5" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.6" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-jacksonxml:2.16.5" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.6.3" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.6.0" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.6.3" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.6.3" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.woodstox:stax2-api:3.1.4" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.6.3" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.woodstox:woodstox-core-asl:4.4.1" level="project" />
     <orderEntry type="library" name="Maven: com.sun.xml.bind:jaxb-core:2.2.11" level="project" />
     <orderEntry type="library" name="Maven: com.sun.xml.bind:jaxb-impl:2.2.11" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-core:2.16.5" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.6" level="project" />
     <orderEntry type="library" name="Maven: org.apache.camel:camel-spring:2.16.5" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-core:4.1.9.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:4.1.9.RELEASE" level="project" />
@@ -52,8 +60,6 @@
     <orderEntry type="library" name="Maven: org.apache.camel:camel-cxf-transport:2.16.5" level="project" />
     <orderEntry type="library" name="Maven: org.apache.cxf:cxf-rt-frontend-jaxrs:3.1.9" level="project" />
     <orderEntry type="library" name="Maven: org.apache.cxf:cxf-core:3.1.9" level="project" />
-    <orderEntry type="library" name="Maven: org.codehaus.woodstox:woodstox-core-asl:4.4.1" level="project" />
-    <orderEntry type="library" name="Maven: org.codehaus.woodstox:stax2-api:3.1.4" level="project" />
     <orderEntry type="library" name="Maven: org.apache.ws.xmlschema:xmlschema-core:2.2.1" level="project" />
     <orderEntry type="library" name="Maven: javax.ws.rs:javax.ws.rs-api:2.0.1" level="project" />
     <orderEntry type="library" name="Maven: javax.annotation:javax.annotation-api:1.2" level="project" />
