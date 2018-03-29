@@ -16,7 +16,7 @@ public class ProxyRoute extends RouteBuilder {
     private static final EsbConfiguration config = Config.getEsbConfiguration();
 
     // smtp://login@host:port?password=password
-    private static final String smtpEndpoint = String.format("smtps://%s:%d?username=%s&password=%s",
+    private static String smtpEndpoint = String.format("smtps://%s:%d?username=%s&password=%s",
             config.getEmailSmtpEndpoint().getHost(),
             config.getEmailSmtpPort(),
             config.getEmailSmtpEndpoint().getCredential().getLogin(),
@@ -27,7 +27,7 @@ public class ProxyRoute extends RouteBuilder {
 
         onException(Exception.class)
                 .handled(true)
-                .log(LoggingLevel.ERROR, "${exception.stacktrace}")
+                .log(LoggingLevel.ERROR, "Unexpected exception: ${exception.stacktrace}")
                 .maximumRedeliveries(2)
                 .redeliveryDelay(15000);
 
@@ -35,7 +35,9 @@ public class ProxyRoute extends RouteBuilder {
                 .choice()
                     .when(header("CamelExceptionCaught").isNull())
                         .transform(header("xmlBody"))
+                    .log(LoggingLevel.INFO, "Transforming message.xml using XSLT template message_m.xsl")
                         .to("xslt:classpath:/xsl/message_m.xsl")
+                    .log(LoggingLevel.INFO, "Successfully transformed message.xml to: body - ${body}")
                         .unmarshal().jacksonxml(EmailMessage.class)
                         .process(exchange -> {
                             EmailMessage em = exchange.getIn().getBody(EmailMessage.class);
@@ -55,7 +57,7 @@ public class ProxyRoute extends RouteBuilder {
 
                         .log(LoggingLevel.INFO, "Try send e-mail message to suppurate department: uuid - ${header[uuid]}; EmailMessage - ${body}")
                         .to(smtpEndpoint)
-                        .log(LoggingLevel.INFO, "Successful send e-mail message to suppurate department: uuid - ${header[uuid]}; EmailMessage - ${body}")
+                        .log(LoggingLevel.INFO, "Successful send e-mail message to suppurate department: uuid - ${header[uuid]}")
                     .otherwise()
                         .removeHeaders("*", "uuid")
 
@@ -69,5 +71,9 @@ public class ProxyRoute extends RouteBuilder {
                         .log(LoggingLevel.INFO, "Successful send e-mail message to admin: uuid - ${header[uuid]}; EmailMessage - ${header[CamelExceptionCaught]}")
                 .endChoice()
         ;
+    }
+
+    public static void setSmtpEndpoint(String smtpEndpoint) {
+        ProxyRoute.smtpEndpoint = smtpEndpoint;
     }
 }

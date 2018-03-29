@@ -6,11 +6,16 @@ import org.apache.camel.Processor;
 import org.apache.cxf.helpers.IOUtils;
 
 import javax.activation.DataHandler;
+import javax.mail.internet.MimeMultipart;
 import javax.mail.internet.MimeUtility;
+import javax.mail.util.ByteArrayDataSource;
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * @author DNAvetik
@@ -18,7 +23,10 @@ import java.util.Map;
  */
 public class AttachmentProcessor implements Processor {
 
+    Logger logger = Logger.getAnonymousLogger();
     public void process(Exchange exchange) throws Exception {
+        String string = exchange.getIn().getBody(String.class);
+        exchange.getIn().addAttachment("message_h.html", new DataHandler(string, "text/html"));
         Map<String, DataHandler> attachments = exchange.getIn().getAttachments();
         List<File> fileList = new ArrayList<>();
         String basePath = System.getProperty("java.io.tmpdir") + File.separator + System.currentTimeMillis();

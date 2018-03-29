@@ -48,7 +48,7 @@ public class ProxyRouter extends RouteBuilder {
                     .setHeader("Authorization").simple("Basic " + DOCUMENTUM_ENDPOINT.getCredential().getBase64String())
                     .log(LoggingLevel.INFO, "Try call documentum to create document: uuid - ${header[uuid]}; request - ${body}")
                     .to(DOCUMENTUM_CREATE_PATH)
-                .log(LoggingLevel.DEBUG, "Trying to unmarshall JSON response")
+                .log(LoggingLevel.DEBUG, "Trying to unmarshal JSON response")
                     .unmarshal().json(JsonLibrary.Jackson, Document.class)
                 .log(LoggingLevel.DEBUG, "Successfully unmarshaled JSON response")
                     .process(exchange -> {
@@ -59,7 +59,6 @@ public class ProxyRouter extends RouteBuilder {
                             }
                         }
                     })
-
                     .setHeader(Exchange.CONTENT_TYPE, constant("application/octet-stream"))
                     .setHeader(Exchange.HTTP_METHOD, constant("POST"))
 

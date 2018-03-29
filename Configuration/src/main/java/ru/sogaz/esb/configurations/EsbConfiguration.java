@@ -43,7 +43,7 @@ public class EsbConfiguration extends AbstractConfiguration {
     }
 
     public String getFromEmail() {
-        return getString("ESB.Email.FromEmail", "davetikov@siblion.ru");
+        return getString("ESB.Email.FromEmail", "ideyniy@mai.ru");
     }
 
 }

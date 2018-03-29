@@ -28,6 +28,8 @@ abstract class AbstractConfiguration {
     private XMLConfiguration conf = null;
     private long nextRenewTime = - 1;
 
+
+
     private final String WrongConfigFileMsg;
 
     AbstractConfiguration(String cfgFilePath, int refreshDelay) {
