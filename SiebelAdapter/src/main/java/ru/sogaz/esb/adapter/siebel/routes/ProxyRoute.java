@@ -27,8 +27,13 @@ public class ProxyRoute extends RouteBuilder {
         from("direct-vm:siebelAdapter:sendSR").routeId("SiebelRoute")
                 .log(LoggingLevel.INFO, "Try execute mapping ESB to Siebel: uuid - ${header[uuid]}; SR - ${body}")
                 .marshal().jacksonxml()
-                .to("xslt:classpath:/xsl/message_s.xsl")
+                .to("xslt:classpath:/xsl/test.xsl")
                 .log(LoggingLevel.INFO, "Successfully executed transformation using message_s.xsl: uuid - ${header[uuid]}; SR - ${body}")
+                /*.process(exchange -> {
+                    ImportSRInput importSRInput = new ImportSRInput();
+                    exchange.getIn().setBody(importSRInput);
+                })
+                .marshal().jacksonxml()*/
                 .unmarshal().jacksonxml(ImportSRInput.class)
                 /*.bean(new EsbToSiebel(), "mapping")*/
                 .log(LoggingLevel.INFO, "Try call Siebel to send SR: uuid - ${header[uuid]}; SR - ${body}")

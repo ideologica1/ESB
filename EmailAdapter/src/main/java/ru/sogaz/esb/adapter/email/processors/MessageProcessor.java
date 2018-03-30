@@ -8,9 +8,7 @@ import ru.sogaz.esb.adapter.email.NoMessageXmlException;
 
 import javax.activation.DataHandler;
 import javax.mail.internet.MimeUtility;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -24,7 +22,8 @@ public class MessageProcessor implements Processor {
         for (String key : attachments.keySet()) {
             if (MimeUtility.decodeText(key).equalsIgnoreCase("message.xml")) {
                 InputStreamReader br = new InputStreamReader((BASE64DecoderStream) attachments.get(key).getContent());
-                exchange.getIn().setBody(IOUtils.toString(br));
+                /*exchange.getIn().setBody(IOUtils.toString(br));*/
+                exchange.getIn().setBody(IOUtils.toString(attachments.get(key).getInputStream(), "UTF-8"));
                 isMessageCorrect = true;
             }
         }

@@ -1004,4 +1004,62 @@ public class ServiceRequest {
         this.listOfSgzEmcDocs = value;
     }
 
+    public String getLkConsumerGUID() {
+        return lkConsumerGUID;
+    }
+
+    public ServiceRequest() {
+    }
+
+    public void setLkConsumerGUID(String lkConsumerGUID) {
+        this.lkConsumerGUID = lkConsumerGUID;
+    }
+
+    public String getLkId() {
+        return lkId;
+    }
+
+    public void setLkId(String lkId) {
+        this.lkId = lkId;
+    }
+
+    public String get_abstract() {
+        return _abstract;
+    }
+
+    public void set_abstract(String _abstract) {
+        this._abstract = _abstract;
+    }
+
+    public String getSgzProject() {
+        return sgzProject;
+    }
+
+    public void setSgzProject(String sgzProject) {
+        this.sgzProject = sgzProject;
+    }
+
+    public String getSgzComplaintType() {
+        return sgzComplaintType;
+    }
+
+    public void setSgzComplaintType(String sgzComplaintType) {
+        this.sgzComplaintType = sgzComplaintType;
+    }
+
+    public String getSgzSubComplaintType() {
+        return sgzSubComplaintType;
+    }
+
+    public void setSgzSubComplaintType(String sgzSubComplaintType) {
+        this.sgzSubComplaintType = sgzSubComplaintType;
+    }
+
+    public String getSgzAgreementDRPFlag() {
+        return sgzAgreementDRPFlag;
+    }
+
+    public void setSgzAgreementDRPFlag(String sgzAgreementDRPFlag) {
+        this.sgzAgreementDRPFlag = sgzAgreementDRPFlag;
+    }
 }

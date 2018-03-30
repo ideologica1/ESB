@@ -2,6 +2,7 @@
 package com.siebel.xml.sgz_20service_20request_20website;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -66,4 +67,10 @@ public class ListOfSgzServiceRequestWebsite {
         return this.serviceRequest;
     }
 
+    public ListOfSgzServiceRequestWebsite() {
+    }
+
+    public void setServiceRequest(List<ServiceRequest> serviceRequest) {
+        this.serviceRequest = serviceRequest;
+    }
 }

@@ -26,7 +26,7 @@ public class AttachmentProcessor implements Processor {
     Logger logger = Logger.getAnonymousLogger();
     public void process(Exchange exchange) throws Exception {
         String string = exchange.getIn().getBody(String.class);
-        exchange.getIn().addAttachment("message_h.html", new DataHandler(string, "text/html"));
+        exchange.getIn().addAttachment("message_h.html", new DataHandler(string, "text/html; charset=UTF-8"));
         Map<String, DataHandler> attachments = exchange.getIn().getAttachments();
         List<File> fileList = new ArrayList<>();
         String basePath = System.getProperty("java.io.tmpdir") + File.separator + System.currentTimeMillis();

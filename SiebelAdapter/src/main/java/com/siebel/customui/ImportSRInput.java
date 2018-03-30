@@ -65,4 +65,6 @@ public class ImportSRInput {
         this.listOfSgzServiceRequestWebsite = value;
     }
 
+    public ImportSRInput() {
+    }
 }
