@@ -21,7 +21,7 @@ public class MessageProcessor implements Processor {
         boolean isMessageCorrect = false;
         for (String key : attachments.keySet()) {
             if (MimeUtility.decodeText(key).equalsIgnoreCase("message.xml")) {
-                InputStreamReader br = new InputStreamReader((BASE64DecoderStream) attachments.get(key).getContent());
+              //  InputStreamReader br = new InputStreamReader((BASE64DecoderStream) attachments.get(key).getContent());
                 /*exchange.getIn().setBody(IOUtils.toString(br));*/
                 exchange.getIn().setBody(IOUtils.toString(attachments.get(key).getInputStream(), "UTF-8"));
                 isMessageCorrect = true;

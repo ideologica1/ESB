@@ -32,6 +32,17 @@ public class Contact {
     @XmlElement(name = "datetime")
     private String dateTime;
 
+    @XmlElement(name = "region")
+    private String region;
+
+    public String getRegion() {
+        return region;
+    }
+
+    public void setRegion(String region) {
+        this.region = region;
+    }
+
     public String getFio() {
         return fio;
     }
@@ -98,6 +109,7 @@ public class Contact {
                 ", contactId=" + contactId +
                 ", ip='" + ip + '\'' +
                 ", dateTime='" + dateTime + '\'' +
+                ", region='" + region + '\'' +
                 '}';
     }
 }

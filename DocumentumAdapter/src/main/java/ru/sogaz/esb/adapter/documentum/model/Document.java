@@ -1,6 +1,7 @@
 package ru.sogaz.esb.adapter.documentum.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -15,6 +16,7 @@ import java.util.List;
  */
 
 @JsonIgnoreProperties(ignoreUnknown=true)
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Document {
 
 
@@ -29,7 +31,7 @@ public class Document {
     private String definition;
 
 
-    private List<Property> properties;
+    private Property properties;
 
 
     private List<Link> links;
@@ -58,21 +60,21 @@ public class Document {
         this.definition = definition;
     }
 
-    public List<Property> getProperties() {
+    public Property getProperties() {
         if (null == properties) {
-            properties = new ArrayList<>();
+            properties = new Property();
         }
         return properties;
     }
 
     public List<Link> getLinks() {
-        if (null == links) {
+        /*if (null == links) {
             links = new ArrayList<>();
-        }
+        }*/
         return links;
     }
 
-    public void setProperties(List<Property> properties) {
+    public void setProperties(Property properties) {
         this.properties = properties;
     }
 

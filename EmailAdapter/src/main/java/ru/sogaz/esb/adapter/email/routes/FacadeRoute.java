@@ -22,7 +22,7 @@ public class FacadeRoute extends RouteBuilder {
 
     private static final EsbConfiguration config = Config.getEsbConfiguration();
 
-    private static final String imapEndpoint = String.format("imaps://%s:%d?username=%s&password=%s&consumer.delay=60000&unseen=true&peek=false",
+    private static final String imapEndpoint = String.format("imaps://%s:%d?username=%s&password=%s&closeFolder=false$consumer.delay=60000&unseen=true&peek=false",
             config.getEmailImapEndpoint().getHost(),
             config.getEmailImapPort(),
             config.getEmailImapEndpoint().getCredential().getLogin(),

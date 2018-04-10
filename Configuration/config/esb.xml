@@ -2,7 +2,7 @@
 <Configuration>
     <ESB>
         <Email>
-            <URL host="mail.siblion.ru" login="davetikov" password="Zarbazan3005" timeout="60000"/>
+            <URL host="mail.siblion.ru" login="login" password="password" timeout="60000"/>
             <ImapPort>143</ImapPort>
             <SmptPort>25</SmptPort>
             <AdminEmail>davetikov@siblion.ru</AdminEmail>

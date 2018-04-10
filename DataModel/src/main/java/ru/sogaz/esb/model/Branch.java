@@ -12,7 +12,7 @@ import javax.xml.bind.annotation.XmlElement;
 public class Branch {
 
     @XmlElement(name = "id_state")
-    private Integer idState;
+    private String idState;
 
     @XmlElement(name = "name_state")
     private String nameState;
@@ -29,11 +29,11 @@ public class Branch {
     @XmlElement(name = "name_dep")
     private String nameDep;
 
-    public Integer getIdState() {
+    public String getIdState() {
         return idState;
     }
 
-    public void setIdState(Integer idState) {
+    public void setIdState(String idState) {
         this.idState = idState;
     }
 

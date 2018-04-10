@@ -17,6 +17,7 @@ public class InsLine {
     @XmlElement(name = "name")
     private String name;
 
+
     public Integer getId() {
         return id;
     }
@@ -36,8 +37,8 @@ public class InsLine {
     @Override
     public String toString() {
         return "{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
+                "id= " + id +
+                ", name= " + name +
                 '}';
     }
 }

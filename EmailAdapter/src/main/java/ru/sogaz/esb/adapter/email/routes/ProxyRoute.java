@@ -47,8 +47,8 @@ public class ProxyRoute extends RouteBuilder {
                         .log(LoggingLevel.INFO, "Successful transform xml to EmailMessage: uuid - ${header[uuid]}; EmailMessage - ${body}")
                         .removeHeaders("*", "uuid")
 
-                        /*.setHeader("to", simple("${body.to}"))*/
-                        .setHeader("to", simple("ideyniy@mail.ru"))
+                        .setHeader("to", simple("${body.to}"))
+                        /*.setHeader("to", simple("ideyniy@mail.ru"))*/
                         .setHeader("cc", simple("${body.cc}"))
                         .setHeader("bcc", simple("${body.bcc}"))
                         .setHeader("subject", simple("${body.subject}"))

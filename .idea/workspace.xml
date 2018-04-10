@@ -2,14 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf05c560-e9ed-4061-98ef-930809bc62d2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Configuration/config/esb.xml" afterPath="$PROJECT_DIR$/Configuration/config/esb.xml" />
+      <change beforePath="$PROJECT_DIR$/DataModel/src/main/java/ru/sogaz/esb/model/Branch.java" afterPath="$PROJECT_DIR$/DataModel/src/main/java/ru/sogaz/esb/model/Branch.java" />
+      <change beforePath="$PROJECT_DIR$/DataModel/src/main/java/ru/sogaz/esb/model/Contact.java" afterPath="$PROJECT_DIR$/DataModel/src/main/java/ru/sogaz/esb/model/Contact.java" />
+      <change beforePath="$PROJECT_DIR$/DataModel/src/main/java/ru/sogaz/esb/model/InsLine.java" afterPath="$PROJECT_DIR$/DataModel/src/main/java/ru/sogaz/esb/model/InsLine.java" />
+      <change beforePath="$PROJECT_DIR$/DataModel/src/main/java/ru/sogaz/esb/model/Message.java" afterPath="$PROJECT_DIR$/DataModel/src/main/java/ru/sogaz/esb/model/Message.java" />
+      <change beforePath="$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/model/Document.java" afterPath="$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/model/Document.java" />
+      <change beforePath="$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/model/Link.java" afterPath="$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/model/Link.java" />
+      <change beforePath="$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/model/Property.java" afterPath="$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/model/Property.java" />
+      <change beforePath="$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/processors/NewDocumentProcessor.java" afterPath="$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/processors/NewDocumentProcessor.java" />
+      <change beforePath="$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/routes/ProxyRouter.java" afterPath="$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/routes/ProxyRouter.java" />
       <change beforePath="$PROJECT_DIR$/EmailAdapter/src/main/java/ru/sogaz/esb/adapter/email/processors/AttachmentProcessor.java" afterPath="$PROJECT_DIR$/EmailAdapter/src/main/java/ru/sogaz/esb/adapter/email/processors/AttachmentProcessor.java" />
       <change beforePath="$PROJECT_DIR$/EmailAdapter/src/main/java/ru/sogaz/esb/adapter/email/processors/MessageProcessor.java" afterPath="$PROJECT_DIR$/EmailAdapter/src/main/java/ru/sogaz/esb/adapter/email/processors/MessageProcessor.java" />
-      <change beforePath="$PROJECT_DIR$/SiebelAdapter/src/main/java/com/siebel/customui/ImportSRInput.java" afterPath="$PROJECT_DIR$/SiebelAdapter/src/main/java/com/siebel/customui/ImportSRInput.java" />
-      <change beforePath="$PROJECT_DIR$/SiebelAdapter/src/main/java/com/siebel/xml/sgz_20service_20request_20website/ListOfSgzServiceRequestWebsite.java" afterPath="$PROJECT_DIR$/SiebelAdapter/src/main/java/com/siebel/xml/sgz_20service_20request_20website/ListOfSgzServiceRequestWebsite.java" />
-      <change beforePath="$PROJECT_DIR$/SiebelAdapter/src/main/java/com/siebel/xml/sgz_20service_20request_20website/ServiceRequest.java" afterPath="$PROJECT_DIR$/SiebelAdapter/src/main/java/com/siebel/xml/sgz_20service_20request_20website/ServiceRequest.java" />
+      <change beforePath="$PROJECT_DIR$/EmailAdapter/src/main/java/ru/sogaz/esb/adapter/email/routes/FacadeRoute.java" afterPath="$PROJECT_DIR$/EmailAdapter/src/main/java/ru/sogaz/esb/adapter/email/routes/FacadeRoute.java" />
+      <change beforePath="$PROJECT_DIR$/EmailAdapter/src/main/java/ru/sogaz/esb/adapter/email/routes/ProxyRoute.java" afterPath="$PROJECT_DIR$/EmailAdapter/src/main/java/ru/sogaz/esb/adapter/email/routes/ProxyRoute.java" />
       <change beforePath="$PROJECT_DIR$/SiebelAdapter/src/main/java/ru/sogaz/esb/adapter/siebel/routes/ProxyRoute.java" afterPath="$PROJECT_DIR$/SiebelAdapter/src/main/java/ru/sogaz/esb/adapter/siebel/routes/ProxyRoute.java" />
+      <change beforePath="$PROJECT_DIR$/soapui_projects/Documentum-soapui-project.xml" afterPath="$PROJECT_DIR$/soapui_projects/Documentum-soapui-project.xml" />
+      <change beforePath="$PROJECT_DIR$/soapui_projects/siebelSR-soapui-project.xml" afterPath="$PROJECT_DIR$/soapui_projects/siebelSR-soapui-project.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/DocumentumAdapter/target/" />
@@ -27,206 +37,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProxyRoute.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SiebelAdapter/src/main/java/ru/sogaz/esb/adapter/siebel/routes/ProxyRoute.java">
+      <file leaf-file-name="Message.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DataModel/src/main/java/ru/sogaz/esb/model/Message.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="44" column="32" lean-forward="true" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.xsl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SiebelAdapter/src/main/resources/xsl/test.xsl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="291" column="25" lean-forward="false" selection-start-line="291" selection-start-column="25" selection-end-line="291" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImportSRInput.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SiebelAdapter/src/main/java/com/siebel/customui/ImportSRInput.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
-              <caret line="41" column="75" lean-forward="false" selection-start-line="41" selection-start-column="75" selection-end-line="41" selection-end-column="75" />
+            <state relative-caret-position="80">
+              <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
               <folding>
-                <marker date="1522375935806" expanded="true" signature="1157:1158" ph="@{...}" />
+                <element signature="e#1090#1091#0" expanded="true" />
+                <element signature="e#1123#1124#0" expanded="true" />
+                <element signature="e#1175#1176#0" expanded="true" />
+                <element signature="e#1219#1220#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListOfSgzServiceRequestWebsite.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SiebelAdapter/src/main/java/com/siebel/xml/sgz_20service_20request_20website/ListOfSgzServiceRequestWebsite.java">
+      <file leaf-file-name="EsbToSiebel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SiebelAdapter/src/main/java/ru/sogaz/esb/adapter/siebel/mapping/EsbToSiebel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="38" column="49" lean-forward="false" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
-              <folding>
-                <element signature="e#2221#2222#0" expanded="true" />
-                <element signature="e#2273#2274#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="camel-context.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SiebelAdapter/src/main/resources/META-INF/spring/camel-context.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-132">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataFormatClause.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/camel/camel-core/2.16.5/camel-core-2.16.5.jar!/org/apache/camel/builder/DataFormatClause.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-216">
-              <caret line="206" column="13" lean-forward="false" selection-start-line="206" selection-start-column="13" selection-end-line="206" selection-end-column="13" />
-              <folding>
-                <marker date="1521579778531" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1521579778531" expanded="false" signature="148:2246" ph="..." />
-                <marker date="1521579778531" expanded="true" signature="2489:2576" ph="{...}" />
-                <marker date="1521579778531" expanded="false" signature="2597:2608" ph=" { " />
-                <marker date="1521579778531" expanded="false" signature="2653:2659" ph=" }" />
-                <marker date="1521579778531" expanded="true" signature="2694:2841" ph="{...}" />
-                <marker date="1521579778531" expanded="false" signature="2886:2897" ph=" { " />
-                <marker date="1521579778531" expanded="false" signature="2959:2965" ph=" }" />
-                <marker date="1521579778531" expanded="true" signature="2989:3102" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="3179:3430" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="3487:3686" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="3760:4001" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="4173:4628" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="4685:4854" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="4894:5033" ph="{...}" />
-                <marker date="1521579778531" expanded="false" signature="5053:5064" ph=" { " />
-                <marker date="1521579778531" expanded="false" signature="5108:5114" ph=" }" />
-                <marker date="1521579778531" expanded="false" signature="5142:5153" ph=" { " />
-                <marker date="1521579778531" expanded="false" signature="5201:5207" ph=" }" />
-                <marker date="1521579778531" expanded="false" signature="5240:5251" ph=" { " />
-                <marker date="1521579778531" expanded="false" signature="5301:5307" ph=" }" />
-                <marker date="1521579778531" expanded="false" signature="5330:5341" ph=" { " />
-                <marker date="1521579778531" expanded="false" signature="5388:5394" ph=" }" />
-                <marker date="1521579778531" expanded="true" signature="5436:5585" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="5647:5838" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="5860:5957" ph="{...}" />
-                <marker date="1521579778531" expanded="false" signature="5977:5988" ph=" { " />
-                <marker date="1521579778531" expanded="false" signature="6032:6038" ph=" }" />
-                <marker date="1521579778531" expanded="true" signature="6075:6203" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="6237:6361" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="6401:6538" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="6595:6766" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="6840:7046" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="7156:7432" ph="{...}" />
-                <marker date="1521579778531" expanded="false" signature="7459:7470" ph=" { " />
-                <marker date="1521579778531" expanded="false" signature="7521:7527" ph=" }" />
-                <marker date="1521579778531" expanded="true" signature="7577:7780" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="7849:8104" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="8151:8350" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="8421:8682" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="8772:9085" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="9170:9475" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="9581:9944" ph="{...}" />
-                <marker date="1521579778531" expanded="false" signature="9965:9976" ph=" { " />
-                <marker date="1521579778531" expanded="false" signature="10021:10027" ph=" }" />
-                <marker date="1521579778531" expanded="true" signature="10067:10224" ph="{...}" />
-                <marker date="1521579778531" expanded="false" signature="10264:10275" ph=" { " />
-                <marker date="1521579778531" expanded="false" signature="10331:10337" ph=" }" />
-                <marker date="1521579778531" expanded="false" signature="10358:10369" ph=" { " />
-                <marker date="1521579778531" expanded="false" signature="10414:10420" ph=" }" />
-                <marker date="1521579778531" expanded="false" signature="10465:10476" ph=" { " />
-                <marker date="1521579778531" expanded="false" signature="10536:10542" ph=" }" />
-                <marker date="1521579778531" expanded="false" signature="10563:10574" ph=" { " />
-                <marker date="1521579778531" expanded="false" signature="10619:10625" ph=" }" />
-                <marker date="1521579778531" expanded="true" signature="10666:10805" ph="{...}" />
-                <marker date="1521579778531" expanded="false" signature="10845:10856" ph=" { " />
-                <marker date="1521579778531" expanded="false" signature="10908:10914" ph=" }" />
-                <marker date="1521579778531" expanded="true" signature="10976:11122" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="11184:11331" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="11414:11603" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="11666:11864" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="11948:12188" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="12267:12499" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="12599:12873" ph="{...}" />
-                <marker date="1521579778531" expanded="false" signature="12898:12909" ph=" { " />
-                <marker date="1521579778531" expanded="false" signature="12958:12964" ph=" }" />
-                <marker date="1521579778531" expanded="true" signature="13012:13185" ph="{...}" />
-                <marker date="1521579778531" expanded="false" signature="13234:13245" ph=" { " />
-                <marker date="1521579778531" expanded="false" signature="13311:13317" ph=" }" />
-                <marker date="1521579778531" expanded="false" signature="13337:13348" ph=" { " />
-                <marker date="1521579778531" expanded="false" signature="13392:13398" ph=" }" />
-                <marker date="1521579778531" expanded="false" signature="13428:13439" ph=" { " />
-                <marker date="1521579778531" expanded="false" signature="13493:13499" ph=" }" />
-                <marker date="1521579778531" expanded="false" signature="13524:13535" ph=" { " />
-                <marker date="1521579778531" expanded="false" signature="13584:13590" ph=" }" />
-                <marker date="1521579778531" expanded="false" signature="13633:13644" ph=" { " />
-                <marker date="1521579778531" expanded="false" signature="13704:13710" ph=" }" />
-                <marker date="1521579778531" expanded="true" signature="13785:13885" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="13957:14054" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="14082:14219" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="14265:14413" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="14490:14662" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="14736:14905" ph="{...}" />
-                <marker date="1521579778531" expanded="false" signature="14928:14939" ph=" { " />
-                <marker date="1521579778531" expanded="false" signature="14972:14978" ph=" }" />
-                <marker date="1521579778531" expanded="true" signature="15016:15148" ph="{...}" />
-                <marker date="1521579778531" expanded="false" signature="15171:15182" ph=" { " />
-                <marker date="1521579778531" expanded="false" signature="15229:15235" ph=" }" />
-                <marker date="1521579778531" expanded="false" signature="15285:15296" ph=" { " />
-                <marker date="1521579778531" expanded="false" signature="15361:15367" ph=" }" />
-                <marker date="1521579778531" expanded="false" signature="15394:15405" ph=" { " />
-                <marker date="1521579778531" expanded="false" signature="15466:15472" ph=" }" />
-                <marker date="1521579778531" expanded="false" signature="15496:15507" ph=" { " />
-                <marker date="1521579778531" expanded="false" signature="15555:15561" ph=" }" />
-                <marker date="1521579778531" expanded="true" signature="15613:15788" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="15847:16023" ph="{...}" />
-                <marker date="1521579778531" expanded="false" signature="16060:16071" ph=" { " />
-                <marker date="1521579778531" expanded="false" signature="16122:16128" ph=" }" />
-                <marker date="1521579778531" expanded="true" signature="16183:16540" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="16567:16678" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="16748:16887" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="16989:17140" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="17229:17380" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="17501:17664" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="17780:17951" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="18099:18282" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="18288:18306" ph="/**...*/" />
-                <marker date="1521579778531" expanded="true" signature="18471:18669" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="18855:19082" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="19288:19528" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="19724:19949" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="20165:20403" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="20621:20860" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="21098:21350" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="21578:21815" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="22063:22313" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="22585:22852" ph="{...}" />
-                <marker date="1521579778531" expanded="false" signature="22877:22888" ph=" { " />
-                <marker date="1521579778531" expanded="false" signature="22937:22943" ph=" }" />
-                <marker date="1521579778531" expanded="false" signature="22967:22978" ph=" { " />
-                <marker date="1521579778531" expanded="false" signature="23026:23032" ph=" }" />
-                <marker date="1521579778531" expanded="false" signature="23083:23094" ph=" { " />
-                <marker date="1521579778531" expanded="false" signature="23149:23155" ph=" }" />
-                <marker date="1521579778531" expanded="true" signature="23176:23271" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="23312:23421" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="23446:23549" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="23613:23953" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="23988:24072" ph="{...}" />
-                <marker date="1521579778531" expanded="true" signature="24055:24066" ph="{}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProxyRoute.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EmailAdapter/src/main/java/ru/sogaz/esb/adapter/email/routes/ProxyRoute.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="812">
-              <caret line="57" column="24" lean-forward="false" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+            <state relative-caret-position="220">
+              <caret line="22" column="40" lean-forward="false" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -235,58 +65,79 @@
       <file leaf-file-name="SRMediatorRoute.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ServiceRequestMediator/src/main/java/ru/sogaz/esb/mediator/sr/routes/SRMediatorRoute.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+            <state relative-caret-position="360">
+              <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AttachmentProcessor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EmailAdapter/src/main/java/ru/sogaz/esb/adapter/email/processors/AttachmentProcessor.java">
+      <file leaf-file-name="FacadeRoute.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/EmailAdapter/src/main/java/ru/sogaz/esb/adapter/email/routes/FacadeRoute.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-44">
-              <caret line="28" column="108" lean-forward="false" selection-start-line="28" selection-start-column="108" selection-end-line="28" selection-end-column="108" />
+            <state relative-caret-position="180">
+              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServiceRequest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SiebelAdapter/src/main/java/com/siebel/xml/sgz_20service_20request_20website/ServiceRequest.java">
+      <file leaf-file-name="ProxyRoute.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SiebelAdapter/src/main/java/ru/sogaz/esb/adapter/siebel/routes/ProxyRoute.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="103" column="33" lean-forward="false" selection-start-line="103" selection-start-column="33" selection-end-line="103" selection-end-column="33" />
-              <folding>
-                <element signature="e#24509#24510#0" expanded="true" />
-                <element signature="e#24546#24547#0" expanded="true" />
-                <element signature="e#24643#24644#0" expanded="true" />
-                <element signature="e#24695#24696#0" expanded="true" />
-                <element signature="e#24726#24727#0" expanded="true" />
-                <element signature="e#24753#24754#0" expanded="true" />
-                <element signature="e#24793#24794#0" expanded="true" />
-                <element signature="e#24825#24826#0" expanded="true" />
-                <element signature="e#24861#24862#0" expanded="true" />
-                <element signature="e#24893#24894#0" expanded="true" />
-                <element signature="e#24943#24944#0" expanded="true" />
-                <element signature="e#24985#24986#0" expanded="true" />
-                <element signature="e#25022#25023#0" expanded="true" />
-                <element signature="e#25055#25056#0" expanded="true" />
-                <element signature="e#25107#25108#0" expanded="true" />
-                <element signature="e#25151#25152#0" expanded="true" />
-                <element signature="e#25194#25195#0" expanded="true" />
-                <element signature="e#25233#25234#0" expanded="true" />
-                <element signature="e#25297#25298#0" expanded="true" />
-                <element signature="e#25353#25354#0" expanded="true" />
-                <element signature="e#25399#25400#0" expanded="true" />
-                <element signature="e#25441#25442#0" expanded="true" />
-                <element signature="e#25511#25512#0" expanded="true" />
-                <element signature="e#25573#25574#0" expanded="true" />
-                <element signature="e#25619#25620#0" expanded="true" />
-                <element signature="e#25661#25662#0" expanded="true" />
-                <element signature="e#25731#25732#0" expanded="true" />
-                <element signature="e#25793#25794#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="636">
+              <caret line="48" column="1" lean-forward="false" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProxyRouter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/routes/ProxyRouter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="53" column="70" lean-forward="false" selection-start-line="53" selection-start-column="70" selection-end-line="53" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Link.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/model/Link.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Property.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/model/Property.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="419">
+              <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Document.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/model/Document.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="64" column="39" lean-forward="false" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewDocumentProcessor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/processors/NewDocumentProcessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -299,11 +150,6 @@
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>tostring</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -318,29 +164,30 @@
       <list>
         <option value="$PROJECT_DIR$/Scripts/build.sh" />
         <option value="$PROJECT_DIR$/Configuration/src/main/java/ru/sogaz/esb/configurations/Config.java" />
-        <option value="$PROJECT_DIR$/DataModel/src/main/java/ru/sogaz/esb/model/Message.java" />
         <option value="$PROJECT_DIR$/ServiceRequestMediator/src/main/java/ru/sogaz/esb/mediator/sr/routes/SRMediatorRoute.java" />
         <option value="$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/processors/TransformProcessor.java" />
-        <option value="$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/model/Link.java" />
-        <option value="$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/model/Document.java" />
-        <option value="$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/model/Property.java" />
-        <option value="$PROJECT_DIR$/EmailAdapter/src/main/java/ru/sogaz/esb/adapter/email/routes/ProxyRoute.java" />
         <option value="$PROJECT_DIR$/EmailAdapter/src/main/java/ru/sogaz/esb/adapter/email/NoMessageXmlException.java" />
         <option value="$PROJECT_DIR$/Configuration/src/main/java/ru/sogaz/esb/configurations/AbstractConfiguration.java" />
         <option value="$PROJECT_DIR$/Configuration/src/main/java/ru/sogaz/esb/configurations/EsbConfiguration.java" />
         <option value="$PROJECT_DIR$/SiebelAdapter/src/main/resources/META-INF/spring/camel-context.xml" />
         <option value="$PROJECT_DIR$/SiebelAdapter/src/main/java/ru/sogaz/esb/adapter/siebel/mapping/EsbToSiebel.java" />
-        <option value="$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/routes/ProxyRouter.java" />
-        <option value="$PROJECT_DIR$/SiebelAdapter/pom.xml" />
-        <option value="$PROJECT_DIR$/EmailAdapter/src/main/resources/xsl/message_h.xsl" />
-        <option value="$PROJECT_DIR$/EmailAdapter/src/main/java/ru/sogaz/esb/adapter/email/processors/AttachmentProcessor.java" />
-        <option value="$PROJECT_DIR$/EmailAdapter/src/main/java/ru/sogaz/esb/adapter/email/processors/MessageProcessor.java" />
-        <option value="$PROJECT_DIR$/EmailAdapter/src/main/java/ru/sogaz/esb/adapter/email/routes/FacadeRoute.java" />
-        <option value="$PROJECT_DIR$/SiebelAdapter/src/main/resources/xsl/test.xsl" />
-        <option value="$PROJECT_DIR$/SiebelAdapter/src/main/java/com/siebel/xml/sgz_20service_20request_20website/ServiceRequest.java" />
-        <option value="$PROJECT_DIR$/SiebelAdapter/src/main/java/com/siebel/xml/sgz_20service_20request_20website/ListOfSgzServiceRequestWebsite.java" />
         <option value="$PROJECT_DIR$/SiebelAdapter/src/main/java/com/siebel/customui/ImportSRInput.java" />
+        <option value="$PROJECT_DIR$/SiebelAdapter/pom.xml" />
+        <option value="$PROJECT_DIR$/EmailAdapter/src/main/java/ru/sogaz/esb/adapter/email/routes/ProxyRoute.java" />
+        <option value="$PROJECT_DIR$/Configuration/config/esb.xml" />
+        <option value="$PROJECT_DIR$/DataModel/src/main/java/ru/sogaz/esb/model/Contact.java" />
+        <option value="$PROJECT_DIR$/EmailAdapter/src/main/java/ru/sogaz/esb/adapter/email/routes/FacadeRoute.java" />
         <option value="$PROJECT_DIR$/SiebelAdapter/src/main/java/ru/sogaz/esb/adapter/siebel/routes/ProxyRoute.java" />
+        <option value="$PROJECT_DIR$/DataModel/src/main/java/ru/sogaz/esb/model/Message.java" />
+        <option value="$PROJECT_DIR$/DataModel/src/main/java/ru/sogaz/esb/model/InsLine.java" />
+        <option value="$PROJECT_DIR$/DataModel/src/main/java/ru/sogaz/esb/model/Branch.java" />
+        <option value="$PROJECT_DIR$/EmailAdapter/src/main/java/ru/sogaz/esb/adapter/email/processors/MessageProcessor.java" />
+        <option value="$PROJECT_DIR$/EmailAdapter/src/main/java/ru/sogaz/esb/adapter/email/processors/AttachmentProcessor.java" />
+        <option value="$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/model/Link.java" />
+        <option value="$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/model/Property.java" />
+        <option value="$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/model/Document.java" />
+        <option value="$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/processors/NewDocumentProcessor.java" />
+        <option value="$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/routes/ProxyRouter.java" />
       </list>
     </option>
   </component>
@@ -375,11 +222,14 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="159" />
-    <option name="y" value="143" />
-    <option name="width" value="1400" />
-    <option name="height" value="891" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -396,48 +246,89 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
               <item name="Artifacts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="Configuration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="Configuration" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="Configuration" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="Configuration" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="Configuration" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="Configuration" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="configurations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
               <item name="DataModel" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
               <item name="DataModel" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
               <item name="DataModel" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
               <item name="DataModel" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
               <item name="DataModel" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -445,51 +336,34 @@
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="DataModel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="DataModel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
               <item name="DocumentumAdapter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
               <item name="DocumentumAdapter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
               <item name="DocumentumAdapter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
               <item name="DocumentumAdapter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
               <item name="DocumentumAdapter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -497,18 +371,8 @@
               <item name="documentum" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="DocumentumAdapter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="documentum" type="462c0819:PsiDirectoryNode" />
-              <item name="aggregation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
               <item name="DocumentumAdapter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -517,8 +381,8 @@
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
               <item name="DocumentumAdapter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -527,8 +391,8 @@
               <item name="processors" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
               <item name="DocumentumAdapter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -537,268 +401,241 @@
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="EmailAdapter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="EmailAdapter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="EmailAdapter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="EmailAdapter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="EmailAdapter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="email" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="EmailAdapter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="email" type="462c0819:PsiDirectoryNode" />
-              <item name="processors" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="EmailAdapter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="email" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="EmailAdapter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="EmailAdapter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="EmailAdapter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="xsl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="Scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="ServiceRequestMediator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="ServiceRequestMediator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="ServiceRequestMediator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="ServiceRequestMediator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="ServiceRequestMediator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="ServiceRequestMediator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="ServiceRequestMediator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="ServiceRequestMediator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="xsl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="SiebelAdapter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="SiebelAdapter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="SiebelAdapter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="SiebelAdapter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="SiebelAdapter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="siebel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="SiebelAdapter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="siebel" type="462c0819:PsiDirectoryNode" />
-              <item name="customui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="SiebelAdapter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="siebel" type="462c0819:PsiDirectoryNode" />
-              <item name="sgz_20service_20request_20website" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="SiebelAdapter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="siebel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="SiebelAdapter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="siebel" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="SiebelAdapter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="SiebelAdapter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="SiebelAdapter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="xsl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOGAZ_ESB" type="462c0819:PsiDirectoryNode" />
-              <item name="SiebelAdapter" type="462c0819:PsiDirectoryNode" />
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="DocumentumAdapter" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SOGAZ_ESB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="EmailAdapter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="EmailAdapter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="EmailAdapter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="EmailAdapter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="EmailAdapter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="email" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="EmailAdapter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="email" type="462c0819:PsiDirectoryNode" />
+              <item name="generators" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="EmailAdapter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="email" type="462c0819:PsiDirectoryNode" />
+              <item name="processors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="EmailAdapter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="email" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="EmailAdapter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="EmailAdapter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="xsl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="Scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="ServiceRequestMediator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="ServiceRequestMediator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="ServiceRequestMediator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="ServiceRequestMediator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="ServiceRequestMediator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="ServiceRequestMediator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="ServiceRequestMediator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="xsl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="SiebelAdapter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="SiebelAdapter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="SiebelAdapter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="SiebelAdapter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="SiebelAdapter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="siebel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="SiebelAdapter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="siebel" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="SiebelAdapter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="SiebelAdapter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="SiebelAdapter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="wsdl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ESB_Ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ESB_Ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="SiebelAdapter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="xsl" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -816,140 +653,6 @@
       <recent name="C:\Development\Projects\ESB_Ver2\SiebelAdapter\src\main\resources\xsl" />
       <recent name="C:\Development\Projects\ESB_Ver2\DocumentumAdapter\src\main\resources\xsl" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/compiler.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/encodings.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Configuration/src/main/java/ru/sogaz/esb/configurations/AbstractConfiguration.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Configuration/src/main/java/ru/sogaz/esb/configurations/EsbConfiguration.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/model/Document.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/model/Link.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/model/Property.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/routes/ProxyRouter.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/EmailAdapter/src/main/java/ru/sogaz/esb/adapter/email/processors/AttachmentProcessor.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/EmailAdapter/src/main/java/ru/sogaz/esb/adapter/email/routes/FacadeRoute.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/EmailAdapter/src/main/java/ru/sogaz/esb/adapter/email/routes/ProxyRoute.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/SiebelAdapter/SiebelAdapter.iml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/SiebelAdapter/pom.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/SiebelAdapter/src/main/java/com/siebel/customui/ImportSRInput.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/SiebelAdapter/src/main/java/ru/sogaz/esb/adapter/siebel/mapping/EsbToSiebel.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/SiebelAdapter/src/main/java/ru/sogaz/esb/adapter/siebel/routes/ProxyRoute.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/SiebelAdapter/src/main/resources/META-INF/spring/camel-context.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/soapui_projects/Documentum-soapui-project.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/soapui_projects/siebelSR-soapui-project.xml</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/DocumentumAdapter/src/main/resources/xsl/message_h.xsl</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/EmailAdapter/src/main/java/ru/sogaz/esb/adapter/email/NoMessageXmlException.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/EmailAdapter/src/main/java/ru/sogaz/esb/adapter/email/processors/MessageProcessor.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/SiebelAdapter/src/main/resources/xsl/departments.xsl</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/SiebelAdapter/src/main/resources/xsl/message_s.xsl</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -987,8 +690,8 @@
     </configuration>
     <configuration name="build.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="INTERPRETER_PATH" value="C:\Program Files\Git\bin\bash.exe" />
-      <option name="WORKING_DIRECTORY" value="C:\Users\ideyniy\IdeaProjects\SOGAZ_ESB" />
+      <option name="INTERPRETER_PATH" value="C:\Development\Tools\Git\bin\bash.exe" />
+      <option name="WORKING_DIRECTORY" value="C:\Development\Projects\ESB_Ver2" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Scripts/build.sh" />
       <option name="PARAMETERS" value="" />
@@ -997,10 +700,10 @@
     </configuration>
     <configuration name="clean" type="BashConfigurationType" factoryName="Bash" activateToolWindowBeforeRun="false">
       <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="INTERPRETER_PATH" value="C:\Program Files\Git\bin\bash.exe" />
-      <option name="WORKING_DIRECTORY" value="C:\Users\ideyniy\IdeaProjects\SOGAZ_ESB" />
+      <option name="INTERPRETER_PATH" value="C:\Development\Tools\Git\bin\bash.exe" />
+      <option name="WORKING_DIRECTORY" value="C:\Development\Projects\ESB_Ver2" />
       <option name="PARENT_ENVS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\ideyniy\IdeaProjects\SOGAZ_ESB\Scripts\clean.sh" />
+      <option name="SCRIPT_NAME" value="C:\Development\Projects\ESB_Ver2\Scripts\clean.sh" />
       <option name="PARAMETERS" value="" />
       <module name="" />
       <envs />
@@ -1097,16 +800,18 @@
       <workItem from="1522165958712" duration="7501000" />
       <workItem from="1522226144311" duration="1102000" />
       <workItem from="1522228115352" duration="776000" />
-      <workItem from="1522230604663" duration="48805000" />
+      <workItem from="1522230604663" duration="56730000" />
+      <workItem from="1522756759271" duration="1193000" />
+      <workItem from="1522844458618" duration="5425000" />
+      <workItem from="1523344923320" duration="5832000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88884000" />
+    <option name="totallyTimeSpent" value="96373000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1115,15 +820,17 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20362474" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23804347" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25108695" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21612541" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20735608" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17590618" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1131,34 +838,11 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20408164" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23852183" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21612541" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1707841" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922733" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1174,6 +858,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/SiebelAdapter/src/main/resources/xsl/departments.xsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/javax/mail/mail/1.4.7/mail-1.4.7.jar!/com/sun/mail/util/BASE64DecoderStream.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1188,18 +880,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/EmailAdapter/src/main/resources/xsl/message_h.xsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8159">
+          <caret line="0" column="21" lean-forward="true" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EmailAdapter/src/main/resources/xsl/message_m.xsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2543">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/examples/message.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Tools/jdk/src.zip!/java/lang/String.java" />
-    <entry file="jar://$USER_HOME$/Tools/jdk/jre/lib/rt.jar!/sun/nio/cs/AbstractCharsetProvider.class" />
-    <entry file="jar://$USER_HOME$/Tools/jdk/src.zip!/java/nio/charset/spi/CharsetProvider.java" />
-    <entry file="jar://$USER_HOME$/Tools/jdk/src.zip!/java/lang/Character.java" />
-    <entry file="jar://$USER_HOME$/Tools/jdk/src.zip!/java/nio/charset/Charset.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/camel/camel-core/2.16.5/camel-core-2.16.5.jar!/org/apache/camel/builder/DataFormatClause.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="202" column="13" lean-forward="false" selection-start-line="202" selection-start-column="13" selection-end-line="202" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../Tools/jdk/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7129">
+          <caret line="110" column="19" lean-forward="false" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../Tools/jdk/jre/lib/rt.jar!/sun/nio/cs/AbstractCharsetProvider.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="115" column="19" lean-forward="false" selection-start-line="115" selection-start-column="19" selection-end-line="115" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../Tools/jdk/src.zip!/java/nio/charset/spi/CharsetProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="89" column="28" lean-forward="false" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../Tools/jdk/src.zip!/java/lang/Character.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4537">
+          <caret line="122" column="6" lean-forward="false" selection-start-line="122" selection-start-column="6" selection-end-line="122" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../Tools/jdk/src.zip!/java/nio/charset/Charset.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="267" column="25" lean-forward="false" selection-start-line="267" selection-start-column="25" selection-end-line="267" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/camel/camel-core/2.16.5/camel-core-2.16.5.jar!/org/apache/camel/model/LogDefinition.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-336">
@@ -1211,17 +958,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SiebelAdapter/src/main/java/ru/sogaz/esb/adapter/siebel/mapping/EsbToSiebel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding>
-            <marker date="1522363284931" expanded="true" signature="1971:2867" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1273,7 +1009,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
           <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SiebelAdapter/src/main/resources/xsl/message_s.xsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2232">
+          <caret line="6" column="39" lean-forward="false" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SiebelAdapter/src/main/java/com/siebel/customui/ImportSROutput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-72">
+          <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1281,105 +1031,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1427">
           <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/model/Link.java">
+    <entry file="file://$PROJECT_DIR$/SiebelAdapter/src/main/java/com/siebel/xml/sgz_20service_20request_20website/SgzEmcDocs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-          <folding />
+        <state relative-caret-position="-563">
+          <caret line="44" column="13" lean-forward="false" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/model/Property.java">
+    <entry file="file://$PROJECT_DIR$/SiebelAdapter/src/main/java/com/siebel/xml/sgz_20service_20request_20website/ListOfSgzServiceRequestWebsiteTopElmt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="28" column="19" lean-forward="true" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="37" />
-          <folding />
+        <state relative-caret-position="-391">
+          <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataModel/src/main/java/ru/sogaz/esb/model/EmailMessage.java">
+    <entry file="file://$PROJECT_DIR$/SiebelAdapter/src/main/java/com/siebel/xml/sgz_20service_20request_20website/ListOfSgzServiceRequestWebsite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataModel/src/main/java/ru/sogaz/esb/model/InsProduct.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-205">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ServiceRequestMediator/src/main/resources/xsl/departments.xsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ServiceRequestMediator/src/main/resources/xsl/message_s.xsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ServiceRequestMediator/src/main/resources/xsl/message_h.xsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EmailAdapter/src/main/resources/xsl/message_h.xsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/cxf/cxf-core/3.1.9/cxf-core-3.1.9.jar!/org/apache/cxf/helpers/IOUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="257" column="33" lean-forward="false" selection-start-line="257" selection-start-column="25" selection-end-line="257" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/routes/ProxyRouter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="56" column="42" lean-forward="false" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
-          <folding>
-            <marker date="1522363284931" expanded="true" signature="3378:3930" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EmailAdapter/src/main/resources/xsl/message_m.xsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SiebelAdapter/src/main/java/com/siebel/customui/ImportSROutput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="816">
+          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1387,27 +1059,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SiebelAdapter/src/main/java/com/siebel/xml/sgz_20service_20request_20website/SgzEmcDocs.java">
+    <entry file="file://$PROJECT_DIR$/SiebelAdapter/src/main/java/com/siebel/xml/sgz_20service_20request_20website/ServiceRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="44" column="13" lean-forward="false" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="-73">
+          <caret line="100" column="13" lean-forward="false" selection-start-line="100" selection-start-column="13" selection-end-line="100" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SiebelAdapter/src/main/java/com/siebel/xml/sgz_20service_20request_20website/ListOfSgzServiceRequestWebsiteTopElmt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ServiceRequestMediator/src/main/resources/xsl/message_m.xsl">
+    <entry file="file://$PROJECT_DIR$/SiebelAdapter/src/main/resources/xsl/test.xsl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1415,294 +1077,179 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SiebelAdapter/src/main/resources/xsl/message_s.xsl">
+    <entry file="file://$PROJECT_DIR$/SiebelAdapter/src/main/java/com/siebel/customui/ImportSRInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="28" />
+        <state relative-caret-position="660">
+          <caret line="40" column="54" lean-forward="false" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SiebelAdapter/src/main/resources/xsl/departments.xsl">
+    <entry file="file://$PROJECT_DIR$/DataModel/src/main/java/ru/sogaz/esb/model/EmailMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="28" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataModel/src/main/java/ru/sogaz/esb/model/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1364">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/model/Document.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EmailAdapter/src/main/java/ru/sogaz/esb/adapter/email/routes/FacadeRoute.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EmailAdapter/src/main/java/ru/sogaz/esb/adapter/email/processors/MessageProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EmailAdapter/src/main/java/ru/sogaz/esb/adapter/email/processors/AttachmentProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-44">
-          <caret line="28" column="108" lean-forward="false" selection-start-line="28" selection-start-column="108" selection-end-line="28" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/camel/camel-core/2.16.5/camel-core-2.16.5.jar!/org/apache/camel/builder/DataFormatClause.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-216">
-          <caret line="206" column="13" lean-forward="false" selection-start-line="206" selection-start-column="13" selection-end-line="206" selection-end-column="13" />
-          <folding>
-            <marker date="1521579778531" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521579778531" expanded="false" signature="148:2246" ph="..." />
-            <marker date="1521579778531" expanded="true" signature="2489:2576" ph="{...}" />
-            <marker date="1521579778531" expanded="false" signature="2597:2608" ph=" { " />
-            <marker date="1521579778531" expanded="false" signature="2653:2659" ph=" }" />
-            <marker date="1521579778531" expanded="true" signature="2694:2841" ph="{...}" />
-            <marker date="1521579778531" expanded="false" signature="2886:2897" ph=" { " />
-            <marker date="1521579778531" expanded="false" signature="2959:2965" ph=" }" />
-            <marker date="1521579778531" expanded="true" signature="2989:3102" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="3179:3430" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="3487:3686" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="3760:4001" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="4173:4628" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="4685:4854" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="4894:5033" ph="{...}" />
-            <marker date="1521579778531" expanded="false" signature="5053:5064" ph=" { " />
-            <marker date="1521579778531" expanded="false" signature="5108:5114" ph=" }" />
-            <marker date="1521579778531" expanded="false" signature="5142:5153" ph=" { " />
-            <marker date="1521579778531" expanded="false" signature="5201:5207" ph=" }" />
-            <marker date="1521579778531" expanded="false" signature="5240:5251" ph=" { " />
-            <marker date="1521579778531" expanded="false" signature="5301:5307" ph=" }" />
-            <marker date="1521579778531" expanded="false" signature="5330:5341" ph=" { " />
-            <marker date="1521579778531" expanded="false" signature="5388:5394" ph=" }" />
-            <marker date="1521579778531" expanded="true" signature="5436:5585" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="5647:5838" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="5860:5957" ph="{...}" />
-            <marker date="1521579778531" expanded="false" signature="5977:5988" ph=" { " />
-            <marker date="1521579778531" expanded="false" signature="6032:6038" ph=" }" />
-            <marker date="1521579778531" expanded="true" signature="6075:6203" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="6237:6361" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="6401:6538" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="6595:6766" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="6840:7046" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="7156:7432" ph="{...}" />
-            <marker date="1521579778531" expanded="false" signature="7459:7470" ph=" { " />
-            <marker date="1521579778531" expanded="false" signature="7521:7527" ph=" }" />
-            <marker date="1521579778531" expanded="true" signature="7577:7780" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="7849:8104" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="8151:8350" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="8421:8682" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="8772:9085" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="9170:9475" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="9581:9944" ph="{...}" />
-            <marker date="1521579778531" expanded="false" signature="9965:9976" ph=" { " />
-            <marker date="1521579778531" expanded="false" signature="10021:10027" ph=" }" />
-            <marker date="1521579778531" expanded="true" signature="10067:10224" ph="{...}" />
-            <marker date="1521579778531" expanded="false" signature="10264:10275" ph=" { " />
-            <marker date="1521579778531" expanded="false" signature="10331:10337" ph=" }" />
-            <marker date="1521579778531" expanded="false" signature="10358:10369" ph=" { " />
-            <marker date="1521579778531" expanded="false" signature="10414:10420" ph=" }" />
-            <marker date="1521579778531" expanded="false" signature="10465:10476" ph=" { " />
-            <marker date="1521579778531" expanded="false" signature="10536:10542" ph=" }" />
-            <marker date="1521579778531" expanded="false" signature="10563:10574" ph=" { " />
-            <marker date="1521579778531" expanded="false" signature="10619:10625" ph=" }" />
-            <marker date="1521579778531" expanded="true" signature="10666:10805" ph="{...}" />
-            <marker date="1521579778531" expanded="false" signature="10845:10856" ph=" { " />
-            <marker date="1521579778531" expanded="false" signature="10908:10914" ph=" }" />
-            <marker date="1521579778531" expanded="true" signature="10976:11122" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="11184:11331" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="11414:11603" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="11666:11864" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="11948:12188" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="12267:12499" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="12599:12873" ph="{...}" />
-            <marker date="1521579778531" expanded="false" signature="12898:12909" ph=" { " />
-            <marker date="1521579778531" expanded="false" signature="12958:12964" ph=" }" />
-            <marker date="1521579778531" expanded="true" signature="13012:13185" ph="{...}" />
-            <marker date="1521579778531" expanded="false" signature="13234:13245" ph=" { " />
-            <marker date="1521579778531" expanded="false" signature="13311:13317" ph=" }" />
-            <marker date="1521579778531" expanded="false" signature="13337:13348" ph=" { " />
-            <marker date="1521579778531" expanded="false" signature="13392:13398" ph=" }" />
-            <marker date="1521579778531" expanded="false" signature="13428:13439" ph=" { " />
-            <marker date="1521579778531" expanded="false" signature="13493:13499" ph=" }" />
-            <marker date="1521579778531" expanded="false" signature="13524:13535" ph=" { " />
-            <marker date="1521579778531" expanded="false" signature="13584:13590" ph=" }" />
-            <marker date="1521579778531" expanded="false" signature="13633:13644" ph=" { " />
-            <marker date="1521579778531" expanded="false" signature="13704:13710" ph=" }" />
-            <marker date="1521579778531" expanded="true" signature="13785:13885" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="13957:14054" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="14082:14219" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="14265:14413" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="14490:14662" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="14736:14905" ph="{...}" />
-            <marker date="1521579778531" expanded="false" signature="14928:14939" ph=" { " />
-            <marker date="1521579778531" expanded="false" signature="14972:14978" ph=" }" />
-            <marker date="1521579778531" expanded="true" signature="15016:15148" ph="{...}" />
-            <marker date="1521579778531" expanded="false" signature="15171:15182" ph=" { " />
-            <marker date="1521579778531" expanded="false" signature="15229:15235" ph=" }" />
-            <marker date="1521579778531" expanded="false" signature="15285:15296" ph=" { " />
-            <marker date="1521579778531" expanded="false" signature="15361:15367" ph=" }" />
-            <marker date="1521579778531" expanded="false" signature="15394:15405" ph=" { " />
-            <marker date="1521579778531" expanded="false" signature="15466:15472" ph=" }" />
-            <marker date="1521579778531" expanded="false" signature="15496:15507" ph=" { " />
-            <marker date="1521579778531" expanded="false" signature="15555:15561" ph=" }" />
-            <marker date="1521579778531" expanded="true" signature="15613:15788" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="15847:16023" ph="{...}" />
-            <marker date="1521579778531" expanded="false" signature="16060:16071" ph=" { " />
-            <marker date="1521579778531" expanded="false" signature="16122:16128" ph=" }" />
-            <marker date="1521579778531" expanded="true" signature="16183:16540" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="16567:16678" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="16748:16887" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="16989:17140" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="17229:17380" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="17501:17664" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="17780:17951" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="18099:18282" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="18288:18306" ph="/**...*/" />
-            <marker date="1521579778531" expanded="true" signature="18471:18669" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="18855:19082" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="19288:19528" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="19724:19949" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="20165:20403" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="20621:20860" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="21098:21350" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="21578:21815" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="22063:22313" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="22585:22852" ph="{...}" />
-            <marker date="1521579778531" expanded="false" signature="22877:22888" ph=" { " />
-            <marker date="1521579778531" expanded="false" signature="22937:22943" ph=" }" />
-            <marker date="1521579778531" expanded="false" signature="22967:22978" ph=" { " />
-            <marker date="1521579778531" expanded="false" signature="23026:23032" ph=" }" />
-            <marker date="1521579778531" expanded="false" signature="23083:23094" ph=" { " />
-            <marker date="1521579778531" expanded="false" signature="23149:23155" ph=" }" />
-            <marker date="1521579778531" expanded="true" signature="23176:23271" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="23312:23421" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="23446:23549" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="23613:23953" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="23988:24072" ph="{...}" />
-            <marker date="1521579778531" expanded="true" signature="24055:24066" ph="{}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SiebelAdapter/src/main/resources/META-INF/spring/camel-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-132">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ServiceRequestMediator/src/main/java/ru/sogaz/esb/mediator/sr/routes/SRMediatorRoute.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        <state relative-caret-position="200">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EmailAdapter/src/main/java/ru/sogaz/esb/adapter/email/routes/ProxyRoute.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="812">
-          <caret line="57" column="24" lean-forward="false" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+        <state relative-caret-position="600">
+          <caret line="35" column="66" lean-forward="false" selection-start-line="35" selection-start-column="66" selection-end-line="35" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SiebelAdapter/src/main/resources/xsl/test.xsl">
+    <entry file="file://$PROJECT_DIR$/Configuration/config/esb.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="291" column="25" lean-forward="false" selection-start-line="291" selection-start-column="25" selection-end-line="291" selection-end-column="25" />
+        <state relative-caret-position="360">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SiebelAdapter/src/main/java/com/siebel/xml/sgz_20service_20request_20website/ServiceRequest.java">
+    <entry file="file://$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/processors/FileToInputStreamProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="103" column="33" lean-forward="false" selection-start-line="103" selection-start-column="33" selection-end-line="103" selection-end-column="33" />
+        <state relative-caret-position="160">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataModel/src/main/java/ru/sogaz/esb/model/Contact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="37" column="31" lean-forward="false" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
           <folding>
-            <element signature="e#24509#24510#0" expanded="true" />
-            <element signature="e#24546#24547#0" expanded="true" />
-            <element signature="e#24643#24644#0" expanded="true" />
-            <element signature="e#24695#24696#0" expanded="true" />
-            <element signature="e#24726#24727#0" expanded="true" />
-            <element signature="e#24753#24754#0" expanded="true" />
-            <element signature="e#24793#24794#0" expanded="true" />
-            <element signature="e#24825#24826#0" expanded="true" />
-            <element signature="e#24861#24862#0" expanded="true" />
-            <element signature="e#24893#24894#0" expanded="true" />
-            <element signature="e#24943#24944#0" expanded="true" />
-            <element signature="e#24985#24986#0" expanded="true" />
-            <element signature="e#25022#25023#0" expanded="true" />
-            <element signature="e#25055#25056#0" expanded="true" />
-            <element signature="e#25107#25108#0" expanded="true" />
-            <element signature="e#25151#25152#0" expanded="true" />
-            <element signature="e#25194#25195#0" expanded="true" />
-            <element signature="e#25233#25234#0" expanded="true" />
-            <element signature="e#25297#25298#0" expanded="true" />
-            <element signature="e#25353#25354#0" expanded="true" />
-            <element signature="e#25399#25400#0" expanded="true" />
-            <element signature="e#25441#25442#0" expanded="true" />
-            <element signature="e#25511#25512#0" expanded="true" />
-            <element signature="e#25573#25574#0" expanded="true" />
-            <element signature="e#25619#25620#0" expanded="true" />
-            <element signature="e#25661#25662#0" expanded="true" />
-            <element signature="e#25731#25732#0" expanded="true" />
-            <element signature="e#25793#25794#0" expanded="true" />
+            <element signature="e#813#814#0" expanded="false" />
+            <element signature="e#857#858#0" expanded="false" />
+            <element signature="e#893#894#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SiebelAdapter/src/main/java/com/siebel/xml/sgz_20service_20request_20website/ListOfSgzServiceRequestWebsite.java">
+    <entry file="file://$PROJECT_DIR$/DataModel/src/main/java/ru/sogaz/esb/model/InsProduct.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="38" column="49" lean-forward="false" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
+        <state relative-caret-position="240">
+          <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataModel/src/main/java/ru/sogaz/esb/model/InsLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="35" lean-forward="false" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataModel/src/main/java/ru/sogaz/esb/model/Branch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EmailAdapter/src/main/java/ru/sogaz/esb/adapter/email/processors/MessageProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="25" column="105" lean-forward="false" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="105" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EmailAdapter/src/main/java/ru/sogaz/esb/adapter/email/processors/AttachmentProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="45" column="21" lean-forward="true" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/model/Link.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/model/Property.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/model/Document.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="64" column="39" lean-forward="false" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/processors/NewDocumentProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DocumentumAdapter/src/main/java/ru/sogaz/esb/adapter/documentum/routes/ProxyRouter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="53" column="70" lean-forward="false" selection-start-line="53" selection-start-column="70" selection-end-line="53" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SiebelAdapter/src/main/java/ru/sogaz/esb/adapter/siebel/mapping/EsbToSiebel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="22" column="40" lean-forward="false" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataModel/src/main/java/ru/sogaz/esb/model/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
           <folding>
-            <element signature="e#2221#2222#0" expanded="true" />
-            <element signature="e#2273#2274#0" expanded="true" />
+            <element signature="e#1090#1091#0" expanded="true" />
+            <element signature="e#1123#1124#0" expanded="true" />
+            <element signature="e#1175#1176#0" expanded="true" />
+            <element signature="e#1219#1220#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SiebelAdapter/src/main/java/com/siebel/customui/ImportSRInput.java">
+    <entry file="file://$PROJECT_DIR$/ServiceRequestMediator/src/main/java/ru/sogaz/esb/mediator/sr/routes/SRMediatorRoute.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="41" column="75" lean-forward="false" selection-start-line="41" selection-start-column="75" selection-end-line="41" selection-end-column="75" />
-          <folding>
-            <marker date="1522375935806" expanded="true" signature="1157:1158" ph="@{...}" />
-          </folding>
+        <state relative-caret-position="360">
+          <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SiebelAdapter/src/main/java/ru/sogaz/esb/adapter/siebel/routes/ProxyRoute.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="44" column="32" lean-forward="true" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
+        <state relative-caret-position="636">
+          <caret line="48" column="1" lean-forward="false" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EmailAdapter/src/main/java/ru/sogaz/esb/adapter/email/routes/FacadeRoute.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding />
         </state>
       </provider>

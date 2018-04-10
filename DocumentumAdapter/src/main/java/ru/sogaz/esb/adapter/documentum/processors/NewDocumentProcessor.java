@@ -23,11 +23,9 @@ public class NewDocumentProcessor implements Processor {
         exchange.getIn().setHeader("fileFormat", fileParts[fileParts.length-1]);
 
         Document document = new Document();
-        List<Property> properties = document.getProperties();
-        Property property = new Property();
-        property.setObjectName(file.getName());
-        property.setObjectType("dm_document");
-        properties.add(property);
+        Property properties = document.getProperties();
+        properties.setObjectName(file.getName());
+        properties.setObjectType("dm_document");
         exchange.getIn().setBody(document);
     }
 }

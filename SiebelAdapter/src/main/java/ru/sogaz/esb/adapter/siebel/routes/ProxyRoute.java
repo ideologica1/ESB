@@ -40,7 +40,7 @@ public class ProxyRoute extends RouteBuilder {
                 .to("bean:siebelEndpoint")
                 .log(LoggingLevel.INFO, "Successful call Siebel to send SR: uuid - ${header[uuid]}; SR - ${body}")
                 .choice()
-                    .when(simple("${body.errorCode} != 'OK'"))
+                    .when(simple("${body.errorCode} != '0'"))
                         .throwException(new RuntimeException("Unsuccessful call siebel"))
                     .otherwise()
                 .endChoice()

@@ -21,6 +21,9 @@ public class Message {
     @XmlElement(name = "ins_line")
     private InsLine insLine;
 
+    @XmlElement(name = "SGZProject")
+    private String sgzProject;
+
     @XmlElement(name = "ins_product")
     private InsProduct insProduct;
 
@@ -41,6 +44,14 @@ public class Message {
 
     @XmlElement(name = "links")
     private List<String> links;
+
+    public String getSgzProject() {
+        return sgzProject;
+    }
+
+    public void setSgzProject(String sgzProject) {
+        this.sgzProject = sgzProject;
+    }
 
     public Type getType() {
         return type;
@@ -118,6 +129,7 @@ public class Message {
         return "{" +
                 "type=" + type +
                 ", insLine=" + insLine +
+                ", sgzProject=" + sgzProject +
                 ", insProduct=" + insProduct +
                 ", contact=" + contact +
                 ", policy=" + policy +

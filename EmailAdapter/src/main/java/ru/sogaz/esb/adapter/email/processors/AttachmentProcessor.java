@@ -25,8 +25,8 @@ public class AttachmentProcessor implements Processor {
 
     Logger logger = Logger.getAnonymousLogger();
     public void process(Exchange exchange) throws Exception {
-        String string = exchange.getIn().getBody(String.class);
-        exchange.getIn().addAttachment("message_h.html", new DataHandler(string, "text/html; charset=UTF-8"));
+        String htmlRepresentation = exchange.getIn().getBody(String.class);
+        exchange.getIn().addAttachment("message_h.html", new DataHandler(htmlRepresentation, "text/html; charset=UTF-8"));
         Map<String, DataHandler> attachments = exchange.getIn().getAttachments();
         List<File> fileList = new ArrayList<>();
         String basePath = System.getProperty("java.io.tmpdir") + File.separator + System.currentTimeMillis();
@@ -35,8 +35,8 @@ public class AttachmentProcessor implements Processor {
 
         for (String key : attachments.keySet()) {
             if (MimeUtility.decodeText(key).equalsIgnoreCase("message.xml")) {
-                InputStreamReader br = new InputStreamReader((BASE64DecoderStream) attachments.get(key).getContent());
-                exchange.getIn().setBody(IOUtils.toString(br));
+                //InputStreamReader br = new InputStreamReader((BASE64DecoderStream) attachments.get(key).getContent());
+                exchange.getIn().setBody(IOUtils.toString(attachments.get(key).getInputStream(), "UTF-8"));
             } else {
                 String path = basePath + File.separator + MimeUtility.decodeText(key);
                 File tmp = new File(path);

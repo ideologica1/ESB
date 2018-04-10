@@ -43,17 +43,18 @@ public class ProxyRouter extends RouteBuilder {
                 .aggregationStrategy(new LinkAggregationStrategy())
                     .removeHeaders("*", "uuid")
                     .process(new NewDocumentProcessor())
-                .log(LoggingLevel.DEBUG, "Trying to marshal Document.class to JSON request; request - ${body}")
+                .log(LoggingLevel.INFO, "Trying to marshal Document.class to JSON request; request - ${body}")
                     .marshal().json(JsonLibrary.Jackson)
-                .log(LoggingLevel.DEBUG, "Successful marshaling Document.class to JSON request; request - ${body}")
+                .log(LoggingLevel.INFO, "Successful marshaling Document.class to JSON request; request - ${body}")
                     .setHeader(Exchange.CONTENT_TYPE, constant("application/vnd.emc.documentum+json;charset=UTF-8"))
                     .setHeader(Exchange.HTTP_METHOD, constant("POST"))
                     .setHeader("Authorization").simple("Basic " + DOCUMENTUM_ENDPOINT.getCredential().getBase64String())
                     .log(LoggingLevel.INFO, "Try call documentum to create document: uuid - ${header[uuid]}; request - ${body}")
                     .to(DOCUMENTUM_CREATE_PATH)
-                .log(LoggingLevel.DEBUG, "Trying to unmarshal JSON response")
+                .log(LoggingLevel.INFO, "Successfully created document: uuid - ${header[uuid]}; response - ${body}; location - ${header[link]}")
+                .log(LoggingLevel.INFO, "Trying to unmarshal JSON response - ${body}")
                     .unmarshal().json(JsonLibrary.Jackson, Document.class)
-                .log(LoggingLevel.DEBUG, "Successfully unmarshaled JSON response")
+                .log(LoggingLevel.INFO, "Successfully unmarshaled JSON response - ${body}")
                     .process(exchange -> {
                         Document document = exchange.getIn().getBody(Document.class);
                         for (Link link : document.getLinks()) {
@@ -65,10 +66,10 @@ public class ProxyRouter extends RouteBuilder {
                     .setHeader(Exchange.CONTENT_TYPE, constant("application/octet-stream"))
                     .setHeader(Exchange.HTTP_METHOD, constant("POST"))
 
-                    .log(LoggingLevel.INFO, "Try call documentum to send document: uuid - ${header[uuid]}; document - ${body}")
+                    .log(LoggingLevel.INFO, "Try call documentum to send document: uuid - ${header[uuid]}; document - ${body}; location - ${header[link]}")
                     .process(new FileToInputStreamProcessor())
-                    .recipientList(simple("${header[Location]}/contents?overwrite=true&format=${header[fileFormat]}"))
-
+                    .recipientList(simple("${header[link]}/contents?overwrite=true&format=${header[fileFormat]}"))
+                    .log(LoggingLevel.INFO, "Successfully sent document to documentum: uuid - ${header[uuid]}; response - ${body}; location - ${header[link]}")
                     .transform(header("link"))
                 .end();
     }
