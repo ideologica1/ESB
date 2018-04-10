@@ -52,9 +52,10 @@ public class FacadeRoute extends RouteBuilder {
                 .process(new AttachmentProcessor())
                 .log(LoggingLevel.INFO, "Message.xml status - OK : uuid - ${header[uuid]}; attachments - ${header[attachments]}")
                 .setHeader("xmlBody", simple("${body}"))
-                .unmarshal().jacksonxml(Message.class)
+                /*.unmarshal().jacksonxml(Message.class)
                 .setHeader("objectBody", simple("${body}"))
-                .log(LoggingLevel.INFO, "Successful transform message.xml to xml and object:  uuid - ${header[uuid]}; object - ${header[objectBody]}; xml - ${header[xmlBody]}")
+                .log(LoggingLevel.INFO, "Successful transform message.xml to xml and object:  uuid - ${header[uuid]}; object - ${header[objectBody]}; xml - ${header[xmlBody]}")*/
+                .log(LoggingLevel.INFO, "Successful transform message.xml to xml and object:  uuid - ${header[uuid]}; xml - ${header[xmlBody]}")
                 .enrich("direct-vm:emailAdapter:send", (oldExchange, newExchange) -> oldExchange)
                 .to("direct-vm:srMediator:main")
         ;

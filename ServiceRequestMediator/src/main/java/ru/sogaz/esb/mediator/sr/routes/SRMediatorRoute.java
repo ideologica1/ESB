@@ -19,8 +19,8 @@ public class SRMediatorRoute extends RouteBuilder {
                 })
                 .log("this is exactly that point where nullpointer occurs - ${body}")
                 .process(exchange -> {
-                    Message message = exchange.getIn().getHeader("objectBody", Message.class);/*
-                    message.getLinks().addAll(exchange.getIn().getBody(List.class));*/
+                    String message = exchange.getIn().getHeader("xmlBody", String.class);
+                  //  message.getLinks().addAll(exchange.getIn().getBody(List.class));
                     exchange.getIn().setBody(message);
                 })
 
