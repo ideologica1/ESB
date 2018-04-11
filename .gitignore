@@ -1,3 +1,5 @@
 Artifacts/
 Docker/ServiceMix/
 target/
+.idea
+*.iml
