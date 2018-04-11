@@ -66,7 +66,7 @@ public class ProxyRouter extends RouteBuilder {
 
                 .log(LoggingLevel.INFO, "Try call documentum to send document: uuid - ${header[uuid]}; document - ${body}; location - ${header[link]}")
                 .process(new FileToInputStreamProcessor())
-                .to("http://s00-0000-dm13:7001/dctm-rest72/repositories/orclord/objects/0900000189ae216e/contents?overwrite=true&format=${header[fileFormat]}")
+                .recipientList(simple("http://s00-0000-dm13:7001/dctm-rest72/repositories/orclord/objects/0900000189ae216e/contents?overwrite=true&format=${header[fileFormat]}"))
                 .log(LoggingLevel.INFO, "Successfully sent document to documentum: uuid - ${header[uuid]}; response - ${body}; location - ${header[link]}")
                 .transform(header("link"))
                 .end();
