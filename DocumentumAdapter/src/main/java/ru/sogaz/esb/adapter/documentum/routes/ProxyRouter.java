@@ -3,7 +3,6 @@ package ru.sogaz.esb.adapter.documentum.routes;
 import org.apache.camel.Exchange;
 import org.apache.camel.LoggingLevel;
 import org.apache.camel.builder.RouteBuilder;
-import org.apache.camel.model.dataformat.JaxbDataFormat;
 import org.apache.camel.model.dataformat.JsonLibrary;
 import ru.sogaz.esb.adapter.documentum.aggregation.LinkAggregationStrategy;
 import ru.sogaz.esb.adapter.documentum.model.Document;
@@ -29,7 +28,6 @@ public class ProxyRouter extends RouteBuilder {
     public void configure() throws Exception {
 
 
-
         onException(Exception.class)
                 .handled(true)
                 .log(LoggingLevel.ERROR, "${exception.stacktrace}")
@@ -41,36 +39,36 @@ public class ProxyRouter extends RouteBuilder {
                 .streamCaching()
                 .split(header("attachments")).parallelProcessing()
                 .aggregationStrategy(new LinkAggregationStrategy())
-                    .removeHeaders("*", "uuid")
-                    .process(new NewDocumentProcessor())
+                .removeHeaders("*", "uuid")
+                .process(new NewDocumentProcessor())
                 .log(LoggingLevel.INFO, "Trying to marshal Document.class to JSON request; request - ${body}")
-                    .marshal().json(JsonLibrary.Jackson)
+                .marshal().json(JsonLibrary.Jackson)
                 .log(LoggingLevel.INFO, "Successful marshaling Document.class to JSON request; request - ${body}")
-                    .setHeader(Exchange.CONTENT_TYPE, constant("application/vnd.emc.documentum+json;charset=UTF-8"))
-                    .setHeader(Exchange.HTTP_METHOD, constant("POST"))
-                    .setHeader("Authorization").simple("Basic " + DOCUMENTUM_ENDPOINT.getCredential().getBase64String())
-                    .log(LoggingLevel.INFO, "Try call documentum to create document: uuid - ${header[uuid]}; request - ${body}")
-                    .to(DOCUMENTUM_CREATE_PATH)
+                .setHeader(Exchange.CONTENT_TYPE, constant("application/vnd.emc.documentum+json;charset=UTF-8"))
+                .setHeader(Exchange.HTTP_METHOD, constant("POST"))
+                .setHeader("Authorization").simple("Basic " + DOCUMENTUM_ENDPOINT.getCredential().getBase64String())
+                .log(LoggingLevel.INFO, "Try call documentum to create document: uuid - ${header[uuid]}; request - ${body}")
+                .to(DOCUMENTUM_CREATE_PATH)
                 .log(LoggingLevel.INFO, "Successfully created document: uuid - ${header[uuid]}; response - ${body}; location - ${header[link]}")
                 .log(LoggingLevel.INFO, "Trying to unmarshal JSON response - ${body}")
-                    .unmarshal().json(JsonLibrary.Jackson, Document.class)
+                .unmarshal().json(JsonLibrary.Jackson, Document.class)
                 .log(LoggingLevel.INFO, "Successfully unmarshaled JSON response - ${body}")
-                    .process(exchange -> {
-                        Document document = exchange.getIn().getBody(Document.class);
-                        for (Link link : document.getLinks()) {
-                            if (link.getRel().equalsIgnoreCase("self")) {
-                                exchange.getIn().setHeader("link", link.getHref());
-                            }
+                .process(exchange -> {
+                    Document document = exchange.getIn().getBody(Document.class);
+                    for (Link link : document.getLinks()) {
+                        if (link.getRel().equalsIgnoreCase("self")) {
+                            exchange.getIn().setHeader("link", link.getHref());
                         }
-                    })
-                    .setHeader(Exchange.CONTENT_TYPE, constant("application/octet-stream"))
-                    .setHeader(Exchange.HTTP_METHOD, constant("POST"))
+                    }
+                })
+                .setHeader(Exchange.CONTENT_TYPE, constant("application/octet-stream"))
+                .setHeader(Exchange.HTTP_METHOD, constant("POST"))
 
-                    .log(LoggingLevel.INFO, "Try call documentum to send document: uuid - ${header[uuid]}; document - ${body}; location - ${header[link]}")
-                    .process(new FileToInputStreamProcessor())
-                    .recipientList(simple("${header[link]}/contents?overwrite=true&format=${header[fileFormat]}"))
-                    .log(LoggingLevel.INFO, "Successfully sent document to documentum: uuid - ${header[uuid]}; response - ${body}; location - ${header[link]}")
-                    .transform(header("link"))
+                .log(LoggingLevel.INFO, "Try call documentum to send document: uuid - ${header[uuid]}; document - ${body}; location - ${header[link]}")
+                .process(new FileToInputStreamProcessor())
+                .to("http://s00-0000-dm13:7001/dctm-rest72/repositories/orclord/objects/0900000189ae216e/contents?overwrite=true&format=${header[fileFormat]}")
+                .log(LoggingLevel.INFO, "Successfully sent document to documentum: uuid - ${header[uuid]}; response - ${body}; location - ${header[link]}")
+                .transform(header("link"))
                 .end();
     }
 }
